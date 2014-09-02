@@ -1,0 +1,562 @@
+{
+	"infos":{
+		"picture": "avdlc.jpg",
+		"name": "Antonio VILLAGRA DE LA CRUZ",
+		"title": "Junior Software Engineer",
+		"links": [
+			{
+				"type": "twitter",
+				"link": "https://www.twitter.com/AntonioVdlC"
+			},{
+				"type": "linkedin",
+				"link": "https://www.linkedin.com/in/antoniovdlc/en"
+			},{
+				"type": "github",
+				"link": "https://www.github.com/AntonioVdlC"
+			},{
+				"type": "googleplus",
+				"link": "https://plus.google.com/+AntonioVillagraDeLaCruz"
+			}
+		],
+		"mail": "antonio@villagradelacruz.com"
+	},
+	"timeline": [
+		{
+			"date": 2014,
+			"elements":[
+				{
+					"flag": "bel",
+					"title": "Web Developer",
+					"at": "",
+					"description": "Right after my world tour, I started learning Django, MongoDB and SASS and I developed <a href='http://letsgortw.eu' target='_blank'>Let's Go RTW!</a>",
+					"type": "EXP"
+				},{
+					"flag": "bel",
+					"title": "Mobile Developer",
+					"at": "",
+					"description": "To keep my knowledge up to date, I developed a couple of hybrid apps and I published one of them: <a href='https://play.google.com/store/apps/details?id=com.antoniovdlc.tcl' target='_blank'>Traveller's CheckList</a>!",
+					"type": "EXP"
+				},{
+					"flag": "bel",
+					"title": "Moved to Brussels",
+					"at": "",
+					"description": "Moved to Brussels, Belgium, in 2014.",
+					"type": "PERS"
+				},{
+					"flag": "wld",
+					"title": "World Traveler",
+					"at": "",
+					"description": "I traveled the world for 6 months, visiting 40 city in 10 countries on 4 continents! It was <a href='http://250rtw.blogspot.com' target='_blank'>great</a>!",
+					"type": "PERS"
+				}
+			]
+		},{
+			"date": 2013,
+			"elements": [
+				{
+					"flag": "fra",
+					"title": "Master's Degree in Computer Engineering",
+					"at": "EFREI Engineering Institute",
+					"description": "I obtained a Master's Degree in Computer Engineering at EFREI Engineering Institute; with a focus on software engineering and AI.",
+					"type": "EDU"
+				},{
+					"flag": "fra",
+					"title": "Mobile R&D Engineer",
+					"at": "Bouygues Construction",
+					"description": "I worked for 6 months as a mobile R&D engineer, even if my missions were as diverse as shooting a promotional video for an internal competition or giving tutorials about hybrid mobile development!",
+					"type": "EXP"
+				},{
+					"flag": "fra",
+					"title": "Moved to Versailles",
+					"at": "",
+					"description": "Moved to Versailles, France, in 2013.",
+					"type": "PERS"
+				}
+			]
+		},{
+			"date": 2012,
+			"elements": [
+				{	
+					"flag": "sgp",
+					"title": "Semester Abroad",
+					"at": "Nanyang Technological University",
+					"description": "Semester Abroad at Nanyang Technological University in Singapore. I studied Artificial Intelligence, Neural Networks, Embedded Systems and Organisational Leadership.",
+					"type": "EDU"
+				},{
+					"flag": "fra",
+					"title": "Windows Sidebar Gadget Developer",
+					"at": "Bouygues Construction",
+					"description": "In this 4-month internship I studied and developed Windows Sidebar Gadgets using web technologies. I ended up producing 14 of them!",
+					"type": "EXP"
+				}
+			]
+		},{
+			"date": 2011,
+			"elements": [
+				{
+					"flag": "fra",
+					"title": "President",
+					"at": "EFREI International",
+					"description": "Probably the position I am the proudest of so far, being President of the international club was a formidable experience! We welcomed more than 80 international students that year!",
+					"type": "EXP"
+				},{
+					"flag": "fra",
+					"title": "Bachelor's Degree in Mathematics and Computer Science",
+					"at": "Université Paris-Est Marne-la-Vallée",
+					"description": "I obtained a Bachelor's Degree in Mathematics and Computer Science from Université Paris-Est Marne-la-Vallée.",
+					"type": "EDU"
+				}
+			]
+		},{
+			"date": 2010,
+			"elements": [
+				{
+					"flag": "fra",
+					"title": "Communication Officer",
+					"at": "EFREI Engineering Institute",
+					"description": "Throught out the year, I worked as a Communication Officer, going to over 8 cities and presenting at 12 fairs!",
+					"type": "EXP"
+				},{
+					"flag": "usa",
+					"title": "Semester Abroad",
+					"at": "San José State University",
+					"description": "Semester Abroad at San José State University, California. I studied Networks and Protocols, Operating Systems, Coding Theory and Entrepreneurship.",
+					"type": "EDU"
+				}
+			]
+		},{
+			"date": 2009,
+			"elements":[
+				{
+					"flag": "fra",
+					"title": "Intern",
+					"at": "Bibliothèque de l'Ecole du Louvre",
+					"description": "I worked as an intern for a month in the Louvre, working on the expansion of the Open Access and the enrichment of the digital library ICARE.",
+					"type": "EXP"
+				}
+			]
+		},{
+			"date": 2008,
+			"elements": [
+				{
+					"flag": "fra",
+					"title": "Moved to Paris",
+					"at": "",
+					"description": "Moved to Paris, France, in 2008.",
+					"type": "PERS"
+				},{
+					"flag": "bel",
+					"title": "French Baccalaureate in Sciences",
+					"at": "Lycée Français Jean-Monnet de Bruxelles",
+					"description": "I obtained the French Baccalaureate in Sciences with Honors, from the Lycée Français Jean-Monnet de Bruxelles.",
+					"type": "EDU"
+				}
+			]
+		},{
+			"date": 2001,
+			"elements": [
+				{
+					"flag": "bel",
+					"title": "Moved to Brussels",
+					"at": "",
+					"description": "Moved to Brussels, Belgium, in 2001 and lived there for 7 years.",
+					"type": "PERS"
+				}
+			]
+		},{
+			"date": 2000,
+			"elements": [
+				{
+					"flag": "esp",
+					"title": "Moved to Valladolid",
+					"at": "",
+					"description": "Moved to Valladolid, Spain, in 2000.",
+					"type": "PERS"
+				}
+			]
+		},{
+			"date": 1997,
+			"elements": [
+				{
+					"flag": "civ",
+					"title": "Moved to Abidjan",
+					"at": "",
+					"description": "Moved to Abidjan, Côte d'Ivoire, in 1997.",
+					"type": "PERS"
+				}
+			]
+		},{
+			"date": 1993,
+			"elements": [
+				{
+					"flag": "mad",
+					"title": "Moved to Antananarivo",
+					"at": "",
+					"description": "Moved to Anatananarivo, Madagascar, in 1993.",
+					"type": "PERS"
+				}
+			]
+		},{
+			"date": 1990,
+			"elements": [
+				{
+					"flag": "esp",
+					"title": "Birthday",
+					"at": "",
+					"description": "Born in Valladolid, Spain, on the 27th of December 1990.",
+					"type": "PERS"
+				}
+			]
+		}
+	],
+	"skills":[
+		{
+			"type": "hard",
+			"list": [
+				{
+					"type": "Web Technologies",
+					"list": [
+						{
+							"name": "HTML 5",
+							"icon": "html5",
+							"level": 8,
+							"description": "I have an extensive experience developping with HTML. This goes as far back as highschool!"
+						},{
+							"name": "CSS 3",
+							"icon": "css3",
+							"level": 8,
+							"description": "Even though design has always been my weakness, I have improved a lot recently in making simple but efficient UIs."
+						},{
+							"name": "JavaScript",
+							"icon": "js",
+							"level": 8,
+							"description": "Plain vanilla, jQuery, Backbone, Require ... you name it, I'll do it!"
+						},{
+							"name": "SASS",
+							"icon": "sass",
+							"level": 6,
+							"description": "How to love CSS again? Just go for some SASS!"
+						},{
+							"name": "Django",
+							"icon": "django",
+							"level": 5,
+							"description": "I've learnt Django recently and used my newly built knowledge to develop <a href='http://letsgortw.eu' target='_blank'>Let's Go RTW!</a>."
+						},{
+							"name": "PHP",
+							"icon": "php",
+							"level": 4,
+							"description": "PHP was my first focus when I discovered web development back in highschool, even though I haven't used it in a while..."
+						}
+					]
+				},{
+					"type": "Mobile Apps Development",
+					"list": [
+						{
+							"name": "PhoneGap",
+							"icon": "phonegap",
+							"level": 7,
+							"description": "I did a 6-month intership around PhoneGap, and I even attended a PhoneGap Day! I haven't been following up the new trends, but I do have some valuable experience!"
+						},{
+							"name": "Sencha Touch",
+							"icon": "sencha-touch",
+							"level": 5,
+							"description": "I've played a little bit with it and I developed an hybrid app for the company I was working for."
+						},{
+							"name": "Android",
+							"icon": "android",
+							"level": 2,
+							"description": "Probably my main focus in the mobile development area right now! I hope I'll built up some knowledge and some great apps soon!"
+						},{
+							"name": "iOS",
+							"icon": "ios",
+							"level": 1,
+							"description": "Let's say I have the theoretical basis ... and a Mac! Mostly a Mac though ..."
+						}
+					]
+				},{
+					"type": "Programming Languages",
+					"list": [
+						{
+							"name": "Java",
+							"icon": "java",
+							"level": 5,
+							"description": "I did some Java while in college, but I haven't used it that much after graduation."
+						},{
+							"name": "C",
+							"icon": "c",
+							"level": 5,
+							"description": "I did some C while in college, but I haven't used it that much after graduation."
+						},{
+							"name": "C++",
+							"icon": "c-plusplus",
+							"level": 5,
+							"description": "I did some C++ while in college, but I haven't used it that much after graduation."
+						},{
+							"name": "Python",
+							"icon": "python",
+							"level": 3,
+							"description": "I've started to learn Python (thanks to Django) and I hope I'll learn some new tricks soon!"
+						},{
+							"name": "C#",
+							"icon": "c-sharp",
+							"level": 2,
+							"description": "I did some C# while in college, but probably way too little ..."
+						}
+					]
+				},{
+					"type": "Databases",
+					"list": [
+						{
+							"name": "MySQL",
+							"icon": "mysql",
+							"level": 7,
+							"description": "I studied SQL in college and I worked a couple of times with MySQL!"
+						},{
+							"name": "MongoDB",
+							"icon": "mongodb",
+							"level": 7,
+							"description": "I've just started to learn MongoDB after a long interest in NoSQL databases ... and I love it!"
+						},{
+							"name": "WebSQL",
+							"icon": "websql",
+							"level": 7,
+							"description": "Pretty useful for hybrid mobile apps!"
+						},{
+							"name": "SQLite",
+							"icon": "sqlite",
+							"level": 6,
+							"description": "Django's prefered database format ... and pretty light too!"
+						},{
+							"name": "IndexedDB",
+							"icon": "indexeddb",
+							"level": 5,
+							"description": "The new specifications that are supposed to take over WebSQL. Let's see what happens!"
+						}
+					]
+				},{
+					"type": "Operating Systems",
+					"list": [
+						{
+							"name": "Mac OS",
+							"icon": "macos",
+							"level": 7,
+							"description": "I've been working on Mac OS for a couple of years already!"
+						},{
+							"name": "Windows",
+							"icon": "windows",
+							"level": 7,
+							"description": "Even if I changed my personal computer to Mac a couple of years ago, I have worked with Windows 7 and Windows 8 as well!"
+						},{
+							"name": "UNIX",
+							"icon": "unix",
+							"level": 5,
+							"description": "I had some experiments with Debian, but I still fall for the apple!"
+						}
+					]
+				},{
+					"type": "SCM",
+					"list": [
+						{
+							"name": "Git",
+							"icon": "git",
+							"level": 6,
+							"description": "I can push, pull, commit and do a couple of fancy stuff, but I'm still far from mastering this masterpiece!"
+						},{
+							"name": "SVN",
+							"icon": "svn",
+							"level": 4,
+							"description": "Theoretical knowledge and basic practical experience."
+						}
+					]
+				}
+			]
+		},{
+			"type": "soft",
+			"list": [
+				{
+					"type": "Languages",
+					"list": [
+						{
+							"name": "French",
+							"icon": "french",
+							"level": 10,
+							"description": "Voulez-vous coucher avec moi ce soir ?"
+						},{
+							"name": "English",
+							"icon": "english",
+							"level": 9,
+							"description": "I do believe I am quite fluent in English, and my semesters abroad in California and Singapore really helped me a lot!"
+						},{
+							"name": "Spanish",
+							"icon": "spanish",
+							"level": 8,
+							"description": "Even though Spanish is my mother tongue, I actually speak better French and English than I speak Spanish! ¡Sí señor!"
+						},{
+							"name": "Japanese",
+							"icon": "japanese",
+							"level": 3,
+							"description": "おはよ！ I studied Japanese for 2 years and I went to Japan twice, but I haven't practiced a lot since then."
+						},{
+							"name": "Chinese",
+							"icon": "chinese",
+							"level": 1,
+							"description": "你好! 我叫安东尼奥. 我是西班牙人. That's it!"
+						}
+					]
+				},{
+					"type": "Communicate",
+					"list": [
+						{
+							"name": "Opening up to others",
+							"icon": "openness",
+							"level": 9,
+							"description": "I am open and take the time to listen to others. I am inquisitive and interested in new ideas."
+						},{
+							"name": "Diplomacy",
+							"icon": "diplomacy",
+							"level": 7,
+							"description": "I prefer to avoid conflict. I carefully express my point of view making sure not to offend my audience."
+						},{
+							"name": "Persuasion",
+							"icon": "persuasion",
+							"level": 4,
+							"description": "I do not naturally want to impose my opinions and persuade others."
+						},{
+							"name": "Ease in Public",
+							"icon": "ease-public",
+							"level": 3,
+							"description": "I am reserved, I tend not to feel at ease in public or among people that I do not know."
+						}
+					]
+				},{
+					"type": "Manage",
+					"list": [
+						{
+							"name": "Leading",
+							"icon": "leading",
+							"level": 7,
+							"description": "Leading a team does not come naturally to me but I can accept the group's decision."
+						},{
+							"name": "Taking Responsability",
+							"icon": "responsability",
+							"level": 7,
+							"description": "I am committed and conscientious when I am assigned a task even if I do not always seek responsibility."
+						},{
+							"name": "Organization",
+							"icon": "organization",
+							"level": 6,
+							"description": "I am methodical and organized but am also flexible when faced with unexpected circumstances."
+						},{
+							"name": "Vision",
+							"icon": "vision",
+							"level": 6,
+							"description": "I am able to focus on details and address situations objectively to be more efficient."
+						}
+					]
+				},{
+					"type": "Dare",
+					"list": [
+						{
+							"name": "Autonomy",
+							"icon": "autonomy",
+							"level": 7,
+							"description": "I like to develop independently even if I like sharing my achievements."
+						},{
+							"name": "Independent Mind",
+							"icon": "independent-mind",
+							"level": 6,
+							"description": "I have my own opinions but am still sensitive to the criticisms of those in my company."
+						},{
+							"name": "Creativity",
+							"icon": "creativity",
+							"level": 5,
+							"description": "I show originality but without questioning established procedures."
+						},{
+							"name": "Self-confidence",
+							"icon": "self-confidence",
+							"level": 5,
+							"description": "I sometimes question myself and may tend to doubt my potential."
+						}
+					]
+				},{
+					"type": "Adapt",
+					"list": [
+						{
+							"name": "Stress Management",
+							"icon": "stress-mgmt",
+							"level": 9,
+							"description": "I am naturally laid back and am able to manage pressure. Stressful situations may motivate me."
+						},{
+							"name": "Respect for Authority",
+							"icon": "respect-authority",
+							"level": 6,
+							"description": "I like to maintain a certain independence but I can follow the instructions of my supervisor."
+						},{
+							"name": "Patience",
+							"icon": "patience",
+							"level": 5,
+							"description": "I favor actions which enable me to obtain immediate results, I don't like to wait to obtain concrete results."
+						},{
+							"name": "Responsiveness",
+							"icon": "responsiveness",
+							"level": 4,
+							"description": "I like to analyze situations and give myself the time to make a decision. I may sometimes lack spontaneity."
+						}
+					]
+				},{
+					"type": "Excel",
+					"list": [
+						{
+							"name": "Work Ethic",
+							"icon": "work-ethic",
+							"level": 7,
+							"description": "I am not afraid of hard work even if I like to keep time for myself."
+						},{
+							"name": "Competitive Spirit",
+							"icon": "competitive",
+							"level": 4,
+							"description": "I prefer to avoid situations of rivalry and favor cooperation. I do not necessarily feel the need to be the best."
+						},{
+							"name": "Determination",
+							"icon": "determination",
+							"level": 3,
+							"description": "I prefer to adapt my ambitions to difficulties encountered, even if it means not meeting my initial target."
+						},{
+							"name": "Ambition",
+							"icon": "ambition",
+							"level": 1,
+							"description": "I need to progress at my own pace, my career is not a priority."
+						}
+					]
+				}
+			]
+		}
+	],
+	"randomFacts": [
+		{
+			"text": "There are 12 random facts on this website!"
+		},{
+			"text": "Even if I was born in Spain, I speak better French and English than I do speak Spanish!"
+		},{
+			"text": "So far, I have lived in 7 different countries on 4 different continents!"
+		},{
+			"text": "I'd say that my favorite book is <i>Vagabonding</i> by Rolf Potts!"
+		},{
+			"text": "I started to play guitar because I was bored during a summer holiday in Valladolid!"
+		},{
+			"text": "I love road cycling more than any other sport!"
+		},{
+			"text": "When I was a kid, I wanted to become a scientist!"
+		},{
+			"text": "I know the lyrics of the French and the Ivorian anthems!"
+		},{
+			"text": "So far, my travels brought me to more than 25 countries over 6 continents!"
+		},{
+			"text": "I have one electric guitar and two acoustic guitars, all with a sunburst paint!"
+		},{
+			"text": "I'm always planning my next trip!"
+		},{
+			"text": "Bloc Party is my favorite band ever!"
+		}
+	]
+}

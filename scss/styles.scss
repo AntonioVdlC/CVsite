@@ -1,0 +1,438 @@
+/*
+ *	Stylesheet for CVsite
+ */
+
+@import 'mixins';
+
+body{
+	width: 80%;
+	margin-left: 10%;
+	overflow: hidden;
+}
+
+::-webkit-scrollbar {
+    display:none;
+}
+
+
+/* ------------- */
+/* -- GLOBALS -- */
+/* ------------- */
+
+$header-height: 120px;
+$footer-height: 25px;
+
+
+/* ------------ */
+/* -- HEADER -- */
+/* ------------ */
+
+#header{
+	height: $header-height;
+
+	margin-top: 5%;
+
+	border-top: 1px solid transparent;
+
+	#picture{
+		height: 100%;
+		float: left;
+		border-radius: 100px;
+		box-shadow: 5px 5px 30px 0px rgba(50, 50, 50, 0.67);
+	}
+
+	#name{
+		margin-left: calc(#{$header-height} + 2.5%);
+		@include font-size(16);
+		@include line-height(12);
+	}
+
+	#title{
+		font-weight: normal;
+		margin-left: calc(#{$header-height} + 2.5%);
+		@include font-size(12);
+		@include line-height(8);
+	}
+
+	#vertical-separator{
+		float: right;
+		border-left:1px solid black; 
+     	height: 80%;
+     	margin-top: calc(#{$header-height} * 10 / 100);
+	}
+
+	#links{
+		float: right;
+		margin-left: 2.5%;
+		margin-right: 1.5%;
+
+		height: 80%;
+		width: 11%;
+     	margin-top: calc(#{$header-height} * 10 / 100);
+
+		img{
+			height: 45%;
+			margin-right: 7%;
+
+			opacity: 0.5;			
+
+			&:hover{
+				opacity: 1;
+			}
+		}
+
+		#github, #googleplus{
+			img{
+				margin-top: 5%;
+			}
+		}
+	}
+
+	#mail{
+		float: right;
+		//margin-right: 2.5%;
+		height: 80%;
+     	margin-top: calc(#{$header-height} * 10 / 100);
+
+		img{
+			height: 100%;
+
+			opacity: 0.5;
+
+			&:hover{
+				opacity: 1;
+			}
+		}
+	}
+
+}
+
+/* ---------- */
+/* -- MENU -- */
+/* ---------- */
+
+#menu {
+	margin-top: 3%;
+	@include font-size(7); 
+
+	a {
+		text-decoration: none;
+		color: black;
+
+		&:hover{
+			color: blue !important;
+		}
+	}
+
+	#main-menu {
+		margin-bottom: 0%;
+	}
+
+	#skills-menu{
+		display: none;
+		margin-top: 0%;
+		
+		#a-hard-skills{
+			text-decoration: underline;
+			color: blue;
+		}
+	}
+}
+
+
+/* ------------- */
+/* -- CONTENT -- */
+/* ------------- */
+
+#content {
+	position: absolute;
+	top: calc(#{$header-height} + 17.5%);
+
+	overflow: auto;
+	width: 80%;
+	height: calc(100% - 18% - #{$header-height} - #{$footer-height});
+
+	a{
+		text-decoration: none;
+		color: black;
+		font-weight: bold;
+
+		&:hover{
+			font-style: italic;
+		}
+	}
+
+	/* -- TIMELINE -- */
+	#timeline {
+		display: block;
+		//width: 100%;
+
+		overflow: auto;
+
+		#tl-line{
+			border-left: 2px solid grey;
+			width: 1px;
+			position: absolute;
+			left: calc(50% - 1px);
+
+			z-index: -10;
+		}
+		
+		#tl{
+			list-style: none;
+			padding: 0px;
+			margin: 0px;
+		}
+	
+		.tl-date{
+			text-align: center;
+			clear: both;
+		    padding-top: 2%;
+		    padding-bottom: 1%;
+
+		    background-color: white;
+		    color: black;
+
+		    @include font-size(12);
+
+		    &:first-of-type {
+		    	padding-top: 0px;
+		    }
+		}
+
+		.tl-element{
+			border: 1px solid black;
+
+			width: 45%;
+
+			margin: 10px 2.5%;
+    		padding: 0.4em;
+
+    		&:nth-of-type(even){
+				float: right;
+				clear: right;
+
+				&:before {
+					content: '';
+					position: absolute;
+					right: 48.9%;
+					border: 7px solid transparent;
+					border-right: 7px solid black;
+				}
+
+    		}
+
+			&:nth-of-type(odd){
+				float: left;
+				clear: left;
+				
+				&:before {
+					content: '';
+					position: absolute;
+					left: 48.9%;
+					border: 7px solid transparent;
+					border-left: 7px solid black;
+				}
+
+			}
+
+			&:last-of-type{
+				width: 98%; //calc(100% - 2.5% - 10px - 0.4em);
+				margin-right: 0px;
+				margin-left: 0px;
+				text-align: center;	
+
+				&:before{
+					content: none;
+				}
+
+				.tl-title{
+					margin-left: 57px;
+				}
+			}
+
+			.tl-title {
+				@include font-size(13);
+				font-weight: normal;
+
+				margin-top: 0%;
+				margin-bottom: 0%
+			}
+
+			.tl-at {
+				@include font-size(9);
+				color: grey;
+
+				margin-top: 2%;
+			}
+
+			.tl-description {
+
+			}
+
+			.tl-flag{
+				float: right;
+				margin-left: 15px;
+
+				img{
+					height: 20px;
+					border: 1px solid black;
+				}
+			}
+		}
+	}
+
+	.EDU{
+		border-top: 4px solid red !important;
+	}
+	.EXP{
+		border-top: 4px solid blue !important;
+	}
+	.PERS{
+		border-top: 4px solid green !important;
+	}
+
+	/* -- SKILLS -- */
+	#skills {
+		display: none;
+
+		#hard-skills{
+			display: block;
+		}
+
+		#soft-skills{
+			display: none;
+		}
+
+		#hard-skills, #soft-skills{
+
+			ul{
+				padding: 0%;
+				margin-top: 5%;
+
+				&:first-of-type {
+			    	margin-top: 2%;
+			    }
+			}
+
+			.skill-label{
+				//line-height: 2em;
+				@include font-size(16);
+				display: inline-block;
+				width: calc(100% - 4rem - 3%);
+				
+				padding-bottom: 5px;
+				border-bottom: 1px solid black;
+			}
+
+			.radar-view-icon, .list-view-icon{
+				height: 1.75rem;
+				float: right;
+				border: 2px solid black;
+				padding: 0.1em;
+
+				opacity: 0.5;
+
+				&:hover{
+					opacity: 1 !important;
+				}
+			}
+
+			.radar-view-icon{
+				//margin-right: 3%;
+			}
+			.list-view-icon{
+				margin-right: 2%;
+			}
+
+			.list-view{
+				display: none;
+				list-style: none;
+
+				.skill-element {
+					margin-top: 4%;
+
+					p{
+						margin-bottom: 0%;
+					}
+				}
+
+				.skill-icon{
+					height: 20px;
+					width: 20px;
+					margin-left: 2%;
+				}
+
+				.skill-name{
+					margin-left: 1%;
+					@include font-size(12);
+				}
+
+				.skill-level{
+					float:right;
+
+					img{
+						height: 27px;
+					}
+				}
+
+				.skill-description{
+					margin-left: calc(2% + 1% + 20px + 0.4%);
+					margin-top: 0%;
+				}
+			}
+
+			.radar-view{
+				display: none;
+				text-align: center;
+			}
+		}
+	}
+
+	/* -- RANDOM FACTS -- */
+	#randomFacts {
+		display: none;
+
+		#randomFact{
+			font-weight: bold;
+			text-align: center;
+			margin-top: 10%;
+			@include font-size(20);
+		}
+
+		#newRF{
+			cursor: pointer;
+			text-decoration: underline;
+			color: blue;
+			text-align: center;
+			@include font-size(7);
+		}
+	}
+}
+
+
+/* ------------ */
+/* -- FOOTER -- */
+/* ------------ */
+
+#footer{
+	width: 80%;
+	height: $footer-height;
+
+	@include abs-pos(auto, auto, 0, auto);
+
+	p{
+		@include font-size(6.5);
+		margin-top: 5px;
+
+		a{
+			text-decoration: none;
+			font-weight: bold;
+		}
+	}
+
+	#license{
+		float: right;
+	}
+
+}
