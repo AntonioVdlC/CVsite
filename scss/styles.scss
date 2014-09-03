@@ -68,6 +68,7 @@ $footer-height: 25px;
 
 		height: 80%;
 		width: 11%;
+		max-width: 150px;
      	margin-top: calc(#{$header-height} * 10 / 100);
 
 		img{
@@ -106,6 +107,7 @@ $footer-height: 25px;
 	}
 
 }
+
 
 /* ---------- */
 /* -- MENU -- */
@@ -196,7 +198,7 @@ $footer-height: 25px;
 		    @include font-size(12);
 
 		    &:first-of-type {
-		    	padding-top: 0px;
+		    	padding-top: 0%;
 		    }
 		}
 
@@ -385,6 +387,10 @@ $footer-height: 25px;
 			.radar-view{
 				display: none;
 				text-align: center;
+
+				.skill-radar{
+					margin-top: 4%;
+				}
 			}
 		}
 	}
@@ -436,4 +442,762 @@ $footer-height: 25px;
 		float: right;
 	}
 
+}
+
+
+/* ------------------------------------------------------------------------------------------------------------- */
+/* -- MAX-WIDTH: 1200px; -- */
+/* ------------------------ */
+
+@media all and (max-width: 1200px){
+
+	/* ------------ */
+	/* -- HEADER -- */
+	/* ------------ */
+
+	#header{
+		margin-top: 2%;
+
+		#name{
+			line-height: 0.75rem;
+			margin-top: 1%;
+		}
+
+		#title{
+			line-height: 0.5rem;
+		}
+
+		#vertical-separator{
+			//display: none;
+		}
+
+		#links{
+			float: none;
+			position: absolute;
+			height: 40px;
+			width: 100%;
+			max-width: 100%;
+			top: 12%;
+			left: calc(120px + 12%);
+			margin: 0%;
+
+			img{
+				height: 100%;
+				margin-right: 1%;
+			}
+
+			#github, #googleplus{
+				img{
+					margin-top: 0%;
+				}
+			}
+		}
+
+		#mail{
+			margin-left: 5%;
+		}
+	}	
+}
+
+/* ------------------------------------------------------------------------------------------------------------- */
+/* -- MAX-WIDTH: 1040px; -- */
+/* ------------------------ */
+
+@media all and (max-width: 1040px){
+
+	/* ------------ */
+	/* -- HEADER -- */
+	/* ------------ */
+
+	#header{
+		#vertical-separator{
+			display: none;
+		}
+
+		#links{
+			
+		}
+
+		#mail{
+			position: absolute;
+			top: 12%;
+			left: calc(120px + 160px + 5% + 9% + 5%);
+			height: 40px;
+			margin-left: 0%;
+			margin-top: 0%;
+			
+			z-index: 10;
+		}
+	}	
+}
+
+/* ------------------------------------------------------------------------------------------------------------- */
+/* -- MAX-WIDTH: 790px; -- */
+/* ------------------------ */
+
+@media all and (max-width: 790px){
+
+	/* ------------- */
+	/* -- GLOBALS -- */
+	/* ------------- */
+
+	$header-height: 100px;
+
+
+	/* ------------ */
+	/* -- HEADER -- */
+	/* ------------ */
+
+	#header{
+		height: $header-height;
+
+		#name{
+			@include font-size(12);
+			margin-top: 2%;
+			margin-left: calc(#{$header-height} + 2.5%);
+		}
+
+		#title{
+			@include font-size(10);
+			margin-left: calc(#{$header-height} + 2.5%);
+		}
+
+		#links{
+			top: 10%;
+			left: calc(100px + 12%);
+
+			img{
+				opacity: 1;
+			}
+		}
+
+		#mail{
+			top: 10%;
+			left: calc(100px + 160px + 19%);
+			
+			img{
+				opacity: 1;
+			}
+		}
+	}	
+}
+
+/* ------------------------------------------------------------------------------------------------------------- */
+/* -- MAX-WIDTH: 640px; -- */
+/* ------------------------ */
+
+@media all and (max-width: 640px){
+
+
+	/* ------------ */
+	/* -- HEADER -- */
+	/* ------------ */
+
+	#header{
+		#name{
+			@include font-size(10);
+		}
+
+		#title{
+			@include font-size(8);
+		}
+	}
+
+	/* ------------ */
+	/* -- FOOTER -- */
+	/* ------------ */
+
+	#footer{
+		p{
+			@include font-size(5);
+		}
+
+		#license{
+			float: right;
+		}
+
+	}	
+}
+
+/* ------------------------------------------------------------------------------------------------------------- */
+/* -- MAX-WIDTH: 550px; -- */
+/* ------------------------ */
+
+@media all and (max-width: 550px){
+
+	/* ------------- */
+	/* -- GLOBALS -- */
+	/* ------------- */
+
+	$header-height: 80px;
+	$footer-height: 35px;
+
+	/* ------------ */
+	/* -- HEADER -- */
+	/* ------------ */
+
+	#header{
+		height: $header-height;
+
+		#name{
+			@include font-size(8);
+			margin-left: calc(#{$header-height} + 2.5%);
+		}
+
+		#title{
+			@include font-size(7);
+			margin-left: calc(#{$header-height} + 2.5%);
+		}
+
+		#links{
+			height: 25px;
+			top: 8%;
+			left: calc(80px + 12%);
+		}
+
+		#mail{
+			height: 25px;
+			top: 8%;
+			left: calc(80px + 110px + 19%);
+		}
+	}
+
+	/* ------------- */
+	/* -- CONTENT -- */
+	/* ------------- */
+
+	#content {
+		top: calc(#{$header-height} + 12%);
+		height: calc(100% - 12% - #{$header-height} - #{$footer-height});
+
+
+		/* -- TIMELINE -- */
+		#timeline {
+			#tl-line{
+				display: none;
+			}
+			
+			.tl-date{
+			    @include font-size(12);
+			}
+
+			.tl-element{
+				width: 90%;
+
+				&:nth-of-type(even), &:nth-of-type(odd), &:last-of-type{
+					float: none;
+					clear: both;
+
+					width: 94%;
+					margin: 0px;
+					margin-top: 10px;
+					text-align: left;	
+
+					&:before {
+						content: none;
+					}
+					.tl-title{
+						margin-left: 0%;
+					}
+	    		}
+
+				.tl-title {
+					@include font-size(10);
+				}
+
+				.tl-at {
+					@include font-size(7);
+				}
+
+				.tl-description {
+					@include font-size(7);
+				}
+			}
+		}
+
+		/* -- SKILLS -- */
+		#skills {
+
+			#hard-skills, #soft-skills{
+
+				.skill-label{
+					@include font-size(9);
+					width: calc(100% - 4rem - 3%);
+				}
+
+				.radar-view-icon, .list-view-icon{
+					height: 1.5rem;
+				}
+
+				.list-view{
+					.skill-name{
+						@include font-size(9);
+					}
+
+					.skill-level{
+						img{
+							height: 20px;
+						}
+					}
+
+					.skill-description{
+						@include font-size(7);
+					}
+				}
+
+				.radar-view{
+					canvas{
+						max-width: 275px;
+					}
+				}
+			}
+		}
+	}
+
+
+	/* ------------ */
+	/* -- FOOTER -- */
+	/* ------------ */
+
+	#footer{
+		height: $footer-height;
+		text-align: center;
+
+		p{
+			@include font-size(5);
+		}
+
+		#license{
+			float: none;
+		}
+
+	}	
+}
+
+/* ------------------------------------------------------------------------------------------------------------- */
+/* -- MAX-WIDTH: 420px; -- */
+/* ------------------------ */
+
+@media all and (max-width: 420px){
+	
+	/* ------------- */
+	/* -- GLOBALS -- */
+	/* ------------- */
+
+	$header-height: 80px;
+	$footer-height: 35px;
+
+	/* ------------ */
+	/* -- HEADER -- */
+	/* ------------ */
+
+	#header{
+		#name{
+			@include font-size(7);
+		}
+
+		#title{
+			@include font-size(6);
+		}
+	}
+
+	/* ------------- */
+	/* -- CONTENT -- */
+	/* ------------- */
+
+	#content {
+		top: calc(#{$header-height} + 12%);
+		height: calc(100% - 12% - #{$header-height} - #{$footer-height});
+
+
+		/* -- TIMELINE -- */
+		#timeline {
+			#tl-line{
+				display: none;
+			}
+			
+			.tl-date{
+			    @include font-size(12);
+			}
+
+			.tl-element{
+				width: 90%;
+
+				&:nth-of-type(even), &:nth-of-type(odd), &:last-of-type{
+					float: none;
+					clear: both;
+
+					width: 94%;
+					margin: 0px;
+					margin-top: 10px;
+					text-align: left;	
+
+					&:before {
+						content: none;
+					}
+					.tl-title{
+						margin-left: 0%;
+					}
+	    		}
+
+				.tl-title {
+					@include font-size(10);
+				}
+
+				.tl-at {
+					@include font-size(7);
+				}
+
+				.tl-description {
+					@include font-size(7);
+				}
+			}
+		}
+
+		/* -- SKILLS -- */
+		#skills {
+
+			#hard-skills, #soft-skills{
+
+				.skill-label{
+					@include font-size(9);
+					width: calc(100% - 4rem - 3%);
+				}
+
+				.radar-view-icon, .list-view-icon{
+					height: 1.5rem;
+				}
+
+				.list-view{
+					.skill-name{
+						@include font-size(9);
+					}
+
+					.skill-level{
+						img{
+							height: 20px;
+						}
+					}
+
+					.skill-description{
+						@include font-size(7);
+					}
+				}
+
+				.radar-view{
+					canvas{
+						max-width: 275px;
+					}
+				}
+			}
+		}
+
+		/* -- RANDOM FACTS -- */
+		#randomFacts {
+
+			#randomFact{
+				margin-top: 0%;
+				@include font-size(15);
+			}
+
+			#newRF{
+				@include font-size(7);
+			}
+		}
+	}
+}
+
+/* ------------------------------------------------------------------------------------------------------------- */
+/* -- MAX-WIDTH: 360px; -- */
+/* ------------------------ */
+
+@media all and (max-width: 360px){
+	
+	/* ------------- */
+	/* -- GLOBALS -- */
+	/* ------------- */
+
+	$header-height: 80px;
+	$footer-height: 35px;
+
+
+	/* ------------ */
+	/* -- HEADER -- */
+	/* ------------ */
+
+	#header{
+		#name{
+			@include font-size(5);
+			margin-bottom: 0%;
+		}
+
+		#title{
+			@include font-size(6);
+			margin-top: 1%;
+		}
+
+		#links{
+			top: 10%;
+		}
+
+		#mail{
+			top: 10%;
+		}
+	}
+
+	/* ------------- */
+	/* -- CONTENT -- */
+	/* ------------- */
+
+	#content {
+		top: calc(#{$header-height} + 12%);
+		height: calc(100% - 12% - #{$header-height} - #{$footer-height});
+
+
+		/* -- TIMELINE -- */
+		#timeline {
+			#tl-line{
+				display: none;
+			}
+			
+			.tl-date{
+			    @include font-size(12);
+			}
+
+			.tl-element{
+				width: 90%;
+
+				&:nth-of-type(even), &:nth-of-type(odd), &:last-of-type{
+					float: none;
+					clear: both;
+
+					width: 94%;
+					margin: 0px;
+					margin-top: 10px;
+					text-align: left;	
+
+					&:before {
+						content: none;
+					}
+					.tl-title{
+						margin-left: 0%;
+					}
+	    		}
+
+				.tl-title {
+					@include font-size(10);
+				}
+
+				.tl-at {
+					@include font-size(7);
+				}
+
+				.tl-description {
+					@include font-size(7);
+				}
+			}
+		}
+
+		/* -- SKILLS -- */
+		#skills {
+
+			#hard-skills, #soft-skills{
+
+				.skill-label{
+					@include font-size(9);
+					width: calc(100% - 4rem - 3%);
+				}
+
+				.radar-view-icon, .list-view-icon{
+					height: 1.5rem;
+				}
+
+				.list-view{
+					.skill-name{
+						@include font-size(9);
+					}
+
+					.skill-level{
+						img{
+							height: 20px;
+						}
+					}
+
+					.skill-description{
+						@include font-size(7);
+					}
+				}
+
+				.radar-view{
+					canvas{
+						max-width: 275px;
+					}
+				}
+			}
+		}
+
+		/* -- RANDOM FACTS -- */
+		#randomFacts {
+
+			#randomFact{
+				margin-top: 0%;
+				@include font-size(15);
+			}
+
+			#newRF{
+				@include font-size(7);
+			}
+		}
+	}
+}
+
+/* ------------------------------------------------------------------------------------------------------------- */
+/* -- ORIENTATION: landscape; -- */
+/* ----------------------------- */
+
+@media all and (max-width:790px) and (orientation: landscape){
+
+	/* ------------- */
+	/* -- GLOBALS -- */
+	/* ------------- */
+
+	$header-height: 80px;
+	$footer-height: 35px;
+
+	/* ------------ */
+	/* -- HEADER -- */
+	/* ------------ */
+
+	#header{
+		height: $header-height;
+
+		#name{
+			@include font-size(8);
+			margin-left: calc(#{$header-height} + 2.5%);
+			margin-bottom: 0%;
+		}
+
+		#title{
+			@include font-size(9);
+			margin-left: calc(#{$header-height} + 2.5%);
+			margin-top: 2%;
+		}
+
+		#links{
+			height: 25px;
+			top: 20%;
+			left: calc(80px + 12%);
+		}
+
+		#mail{
+			height: 25px;
+			top: 20%;
+			left: calc(80px + 110px + 19%);
+		}
+	}
+
+	/* ------------- */
+	/* -- CONTENT -- */
+	/* ------------- */
+
+	#content {
+		top: calc(#{$header-height} + 20%);
+		height: calc(100% - 20% - #{$header-height} - #{$footer-height});
+
+
+		/* -- TIMELINE -- */
+		#timeline {
+			#tl-line{
+				display: none;
+			}
+			
+			.tl-date{
+			    @include font-size(12);
+			}
+
+			.tl-element{
+				width: 90%;
+
+				&:nth-of-type(even), &:nth-of-type(odd), &:last-of-type{
+					float: none;
+					clear: both;
+
+					width: 94%;
+					margin: 0px;
+					margin-top: 10px;
+					text-align: left;	
+
+					&:before {
+						content: none;
+					}
+					.tl-title{
+						margin-left: 0%;
+					}
+	    		}
+
+				.tl-title {
+					@include font-size(10);
+				}
+
+				.tl-at {
+					@include font-size(7);
+				}
+
+				.tl-description {
+					@include font-size(7);
+				}
+			}
+		}
+
+		/* -- SKILLS -- */
+		#skills {
+
+			#hard-skills, #soft-skills{
+
+				.skill-label{
+					@include font-size(9);
+					width: calc(100% - 4rem - 3%);
+				}
+
+				.radar-view-icon, .list-view-icon{
+					height: 1.5rem;
+				}
+
+				.list-view{
+					.skill-name{
+						@include font-size(9);
+					}
+
+					.skill-level{
+						img{
+							height: 20px;
+						}
+					}
+
+					.skill-description{
+						@include font-size(7);
+					}
+				}
+
+				.radar-view{
+					canvas{
+						max-width: 275px;
+					}
+				}
+			}
+		}
+
+		/* -- RANDOM FACTS -- */
+		#randomFacts {
+
+			#randomFact{
+				margin-top: 0%;
+				@include font-size(15);
+			}
+
+			#newRF{
+				@include font-size(7);
+			}
+		}
+	}
 }

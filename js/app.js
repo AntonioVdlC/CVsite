@@ -286,7 +286,7 @@ var app = {
 
         //Hide the timeline elements that are outside the viewport
         $('.tl-element').each(function(i, el){
-            if($(el).offset().top > $(window).scrollTop()+$(window).height()*0.8 && $(el).css('opacity') == 1) {
+            if($(el).offset().top > $(window).scrollTop()+$(window).height()*0.9 && $(el).css('opacity') == 1) {
                 $(el).css('opacity', 0);
             }
         });
@@ -294,7 +294,7 @@ var app = {
         //Show the timeline elements that appear in the viewport on scrolling
         $("#content").on('scroll', function(){
             $('.tl-element').each(function(i, el){
-                if($(el).offset().top <= $(window).scrollTop()+$(window).height()*0.8 && $(el).css('opacity') == 0) {
+                if($(el).offset().top <= $(window).scrollTop()+$(window).height()*0.9 && $(el).css('opacity') == 0) {
                     $(el).animate({'opacity': '1'}, 500);
                 }
             });
