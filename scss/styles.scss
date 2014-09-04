@@ -327,6 +327,11 @@ $footer-height: 25px;
 				border-bottom: 1px solid black;
 			}
 
+			.pers-traits{
+				display: none;
+				margin-left: calc(2% + 1% + 20px + 0.4%);
+			}
+
 			.radar-view-icon, .list-view-icon{
 				height: 1.75rem;
 				float: right;
@@ -511,18 +516,26 @@ $footer-height: 25px;
 		}
 
 		#links{
-			
+			top: 14%;
+
+			img{
+				opacity: 1;
+			}
 		}
 
 		#mail{
 			position: absolute;
-			top: 12%;
+			top: 14%;
 			left: calc(120px + 160px + 5% + 9% + 5%);
 			height: 40px;
 			margin-left: 0%;
 			margin-top: 0%;
 			
 			z-index: 10;
+
+			img{
+				opacity: 1;
+			}
 		}
 	}
 
@@ -531,6 +544,8 @@ $footer-height: 25px;
 	/* ------------- */
 
 	#content {
+		top: calc(#{$header-height} + 14%);
+		height: calc(100% - 14% - #{$header-height} - #{$footer-height});
 
 		/* -- TIMELINE -- */
 		#timeline {
@@ -588,19 +603,11 @@ $footer-height: 25px;
 		#links{
 			top: 7%;
 			left: calc(100px + 12%);
-
-			img{
-				opacity: 1;
-			}
 		}
 
 		#mail{
 			top: 7%;
 			left: calc(100px + 160px + 19%);
-
-			img{
-				opacity: 1;
-			}
 		}
 	}
 
@@ -692,11 +699,6 @@ $footer-height: 25px;
 		p{
 			@include font-size(5);
 		}
-
-		#license{
-			float: right;
-		}
-
 	}	
 }
 
@@ -751,36 +753,15 @@ $footer-height: 25px;
 		top: calc(#{$header-height} + 12%);
 		height: calc(100% - 12% - #{$header-height} - #{$footer-height});
 
-
 		/* -- TIMELINE -- */
 		#timeline {
-			#tl-line{
-				display: none;
-			}
-			
+
 			.tl-date{
 			    @include font-size(12);
 			}
 
 			.tl-element{
 				width: 90%;
-
-				&:nth-of-type(even), &:nth-of-type(odd), &:last-of-type{
-					float: none;
-					clear: both;
-
-					width: 94%;
-					margin: 0px;
-					margin-top: 10px;
-					text-align: left;	
-
-					&:before {
-						content: none;
-					}
-					.tl-title{
-						margin-left: 0%;
-					}
-	    		}
 
 				.tl-title {
 					@include font-size(10);
@@ -803,22 +784,11 @@ $footer-height: 25px;
 
 				.skill-label{
 					@include font-size(9);
-					width: calc(100% - 4rem - 3%);
-				}
-
-				.radar-view-icon, .list-view-icon{
-					height: 1.5rem;
 				}
 
 				.list-view{
 					.skill-name{
 						@include font-size(9);
-					}
-
-					.skill-level{
-						img{
-							height: 20px;
-						}
 					}
 
 					.skill-description{
@@ -851,7 +821,6 @@ $footer-height: 25px;
 		#license{
 			float: none;
 		}
-
 	}	
 }
 
@@ -861,13 +830,6 @@ $footer-height: 25px;
 
 @media all and (max-width: 420px){
 	
-	/* ------------- */
-	/* -- GLOBALS -- */
-	/* ------------- */
-
-	$header-height: 80px;
-	$footer-height: 35px;
-
 	/* ------------ */
 	/* -- HEADER -- */
 	/* ------------ */
@@ -887,91 +849,14 @@ $footer-height: 25px;
 	/* ------------- */
 
 	#content {
-		top: calc(#{$header-height} + 12%);
-		height: calc(100% - 12% - #{$header-height} - #{$footer-height});
-
-		/* -- TIMELINE -- */
-		#timeline {
-			#tl-line{
-				display: none;
-			}
-			
-			.tl-date{
-			    @include font-size(12);
-			}
-
-			.tl-element{
-				width: 90%;
-
-				&:nth-of-type(even), &:nth-of-type(odd), &:last-of-type{
-					float: none;
-					clear: both;
-
-					width: 94%;
-					margin: 0px;
-					margin-top: 10px;
-					text-align: left;	
-
-					&:before {
-						content: none;
-					}
-					.tl-title{
-						margin-left: 0%;
-					}
-	    		}
-
-				.tl-title {
-					@include font-size(10);
-				}
-
-				.tl-at {
-					@include font-size(7);
-				}
-
-				.tl-description {
-					@include font-size(7);
-				}
-			}
-		}
 
 		/* -- SKILLS -- */
 		#skills {
 
 			#hard-skills, #soft-skills{
-
-				.skill-label{
-					@include font-size(9);
-					width: calc(100% - 4rem - 3%);
-				}
-
-				.radar-view-icon, .list-view-icon{
-					height: 1.5rem;
-				}
-
-				.list-view{
-					.skill-name{
-						@include font-size(9);
-					}
-
-					.skill-level{
-						img{
-							height: 20px;
-						}
-					}
-
-					.skill-description{
-						@include font-size(7);
-					}
-				}
 				
 				.pers-traits{
 					@include font-size(5);
-				}
-
-				.radar-view{
-					canvas{
-						max-width: 250px;
-					}
 				}
 			}
 		}
@@ -997,14 +882,6 @@ $footer-height: 25px;
 
 @media all and (max-width: 360px){
 	
-	/* ------------- */
-	/* -- GLOBALS -- */
-	/* ------------- */
-
-	$header-height: 80px;
-	$footer-height: 35px;
-
-
 	/* ------------ */
 	/* -- HEADER -- */
 	/* ------------ */
@@ -1028,116 +905,8 @@ $footer-height: 25px;
 			top: 10%;
 		}
 	}
-
-	/* ------------- */
-	/* -- CONTENT -- */
-	/* ------------- */
-
-	#content {
-		top: calc(#{$header-height} + 12%);
-		height: calc(100% - 12% - #{$header-height} - #{$footer-height});
-
-
-		/* -- TIMELINE -- */
-		#timeline {
-			#tl-line{
-				display: none;
-			}
-			
-			.tl-date{
-			    @include font-size(12);
-			}
-
-			.tl-element{
-				width: 90%;
-
-				&:nth-of-type(even), &:nth-of-type(odd), &:last-of-type{
-					float: none;
-					clear: both;
-
-					width: 94%;
-					margin: 0px;
-					margin-top: 10px;
-					text-align: left;	
-
-					&:before {
-						content: none;
-					}
-					.tl-title{
-						margin-left: 0%;
-					}
-	    		}
-
-				.tl-title {
-					@include font-size(10);
-				}
-
-				.tl-at {
-					@include font-size(7);
-				}
-
-				.tl-description {
-					@include font-size(7);
-				}
-			}
-		}
-
-		/* -- SKILLS -- */
-		#skills {
-
-			#hard-skills, #soft-skills{
-
-				.skill-label{
-					@include font-size(9);
-					width: calc(100% - 4rem - 3%);
-				}
-
-				.radar-view-icon, .list-view-icon{
-					height: 1.5rem;
-				}
-
-				.list-view{
-					.skill-name{
-						@include font-size(9);
-					}
-
-					.skill-level{
-						img{
-							height: 20px;
-						}
-					}
-
-					.skill-description{
-						@include font-size(7);
-					}
-				}
-				
-				.pers-traits{
-					@include font-size(5);
-				}
-
-				.radar-view{
-					canvas{
-						max-width: 250px;
-					}
-				}
-			}
-		}
-
-		/* -- RANDOM FACTS -- */
-		#randomFacts {
-
-			#randomFact{
-				margin-top: 0%;
-				@include font-size(15);
-			}
-
-			#newRF{
-				@include font-size(7);
-			}
-		}
-	}
 }
+
 
 /* ------------------------------------------------------------------------------------------------------------- */
 /* -- ORIENTATION: landscape; -- */
