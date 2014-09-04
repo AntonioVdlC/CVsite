@@ -222,15 +222,15 @@
 							"level": 8,
 							"description": "I have an extensive experience developping with HTML. This goes as far back as highschool!"
 						},{
-							"name": "CSS 3",
-							"icon": "css3",
-							"level": 8,
-							"description": "Even though design has always been my weakness, I have improved a lot recently in making simple but efficient UIs."
-						},{
 							"name": "JavaScript",
 							"icon": "js",
 							"level": 8,
 							"description": "Plain vanilla, jQuery, Backbone, Require ... you name it, I'll do it!"
+						},{
+							"name": "CSS 3",
+							"icon": "css3",
+							"level": 6,
+							"description": "Even though design has always been my weakness, I have improved a lot recently in making simple but efficient UIs."
 						},{
 							"name": "SASS",
 							"icon": "sass",
