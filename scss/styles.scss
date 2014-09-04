@@ -467,10 +467,6 @@ $footer-height: 25px;
 			line-height: 0.5rem;
 		}
 
-		#vertical-separator{
-			//display: none;
-		}
-
 		#links{
 			float: none;
 			position: absolute;
@@ -528,20 +524,47 @@ $footer-height: 25px;
 			
 			z-index: 10;
 		}
+	}
+
+	/* ------------- */
+	/* -- CONTENT -- */
+	/* ------------- */
+
+	#content {
+
+		/* -- TIMELINE -- */
+		#timeline {
+
+			.tl-element{
+
+	    		&:nth-of-type(even){
+					&:before {
+						right: 49.2%;
+					}
+	    		}
+
+				&:nth-of-type(odd){
+					&:before {
+						left: 49.2%;
+					}
+				}
+			}
+		}
 	}	
 }
 
 /* ------------------------------------------------------------------------------------------------------------- */
-/* -- MAX-WIDTH: 790px; -- */
+/* -- MAX-WIDTH: 800px; -- */
 /* ------------------------ */
 
-@media all and (max-width: 790px){
+@media all and (max-width: 800px){
 
 	/* ------------- */
 	/* -- GLOBALS -- */
 	/* ------------- */
 
 	$header-height: 100px;
+	$footer-height: 25px;
 
 
 	/* ------------ */
@@ -563,7 +586,7 @@ $footer-height: 25px;
 		}
 
 		#links{
-			top: 10%;
+			top: 7%;
 			left: calc(100px + 12%);
 
 			img{
@@ -572,11 +595,69 @@ $footer-height: 25px;
 		}
 
 		#mail{
-			top: 10%;
+			top: 7%;
 			left: calc(100px + 160px + 19%);
-			
+
 			img{
 				opacity: 1;
+			}
+		}
+	}
+
+	/* ------------- */
+	/* -- CONTENT -- */
+	/* ------------- */
+
+	#content {
+		top: calc(#{$header-height} + 8%);
+		height: calc(100% - 8% - #{$header-height} - #{$footer-height});
+
+		/* -- TIMELINE -- */
+		#timeline{
+			#tl-line{
+				display: none;
+			}
+
+			.tl-element{
+				&:nth-of-type(even), &:nth-of-type(odd), &:last-of-type{
+					float: none !important;
+					clear: both !important;
+
+					width: 94% !important;
+					margin: 0px !important;
+					margin-top: 10px !important;
+					text-align: left !important;	
+
+					&:before {
+						content: none !important;
+					}
+					.tl-title{
+						margin-left: 0% !important;
+					}
+	    		}
+			}
+		}
+
+		/* -- SKILLS -- */
+		#skills {
+
+			#hard-skills, #soft-skills{
+
+				.skill-label{
+					width: calc(100% - 4rem - 3%);
+				}
+
+				.radar-view-icon, .list-view-icon{
+					height: 1.5rem;
+				}
+
+				.list-view{
+					.skill-level{
+						img{
+							height: 20px;
+						}
+					}
+				}
 			}
 		}
 	}	
@@ -809,7 +890,6 @@ $footer-height: 25px;
 		top: calc(#{$header-height} + 12%);
 		height: calc(100% - 12% - #{$header-height} - #{$footer-height});
 
-
 		/* -- TIMELINE -- */
 		#timeline {
 			#tl-line{
@@ -883,10 +963,14 @@ $footer-height: 25px;
 						@include font-size(7);
 					}
 				}
+				
+				.pers-traits{
+					@include font-size(5);
+				}
 
 				.radar-view{
 					canvas{
-						max-width: 275px;
+						max-width: 250px;
 					}
 				}
 			}
@@ -1027,10 +1111,14 @@ $footer-height: 25px;
 						@include font-size(7);
 					}
 				}
+				
+				.pers-traits{
+					@include font-size(5);
+				}
 
 				.radar-view{
 					canvas{
-						max-width: 275px;
+						max-width: 250px;
 					}
 				}
 			}
@@ -1177,6 +1265,10 @@ $footer-height: 25px;
 					.skill-description{
 						@include font-size(7);
 					}
+				}
+
+				.pers-traits{
+					@include font-size(5);
 				}
 
 				.radar-view{
