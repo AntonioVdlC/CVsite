@@ -25,6 +25,18 @@
 			"date": 2014,
 			"elements":[
 				{
+					"flag": "fra",
+					"title": "Web Developer",
+					"at": "Stratocore",
+					"description": "After a sabbatical year, here I am again in a great French company doing web development and much more!",
+					"type": "EXP"
+				},{
+					"flag": "fra",
+					"title": "Moved to Chartres",
+					"at": "",
+					"description": "Moved to Chartres, France, in 2014.",
+					"type": "PERS"
+				},{
 					"flag": "bel",
 					"title": "Web Developer",
 					"at": "",
@@ -34,7 +46,7 @@
 					"flag": "bel",
 					"title": "Mobile Apps Developer",
 					"at": "",
-					"description": "To keep my knowledge up to date, I developed a couple of hybrid apps and I published one of them: <a href='https://play.google.com/store/apps/details?id=com.antoniovdlc.tcl' target='_blank'>Traveller's CheckList</a>!",
+					"description": "To keep my knowledge up to date, I developed some hybrid apps and I published two of them: <a href='https://play.google.com/store/apps/details?id=com.antoniovdlc.tcl' target='_blank'>Traveller's CheckList</a> and <a href='https://play.google.com/store/apps/details?id=com.antoniovdlc.localonomy' target='_blank'>Localonomy</a>!",
 					"type": "EXP"
 				},{
 					"flag": "bel",
@@ -83,6 +95,12 @@
 					"description": "Semester Abroad at Nanyang Technological University in Singapore. I studied Artificial Intelligence, Neural Networks, Embedded Systems and Organisational Leadership.",
 					"type": "EDU"
 				},{
+					"flag": "sgp",
+					"title": "Moved to Singapore",
+					"at": "",
+					"description": "Moved to Singapore, in 2012.",
+					"type": "PERS"
+				},{
 					"flag": "fra",
 					"title": "Windows Sidebar Gadget Developer",
 					"at": "Bouygues Construction",
@@ -117,11 +135,23 @@
 					"description": "Throught out the year, I worked as a Communication Officer, going to over 8 cities and presenting at 12 fairs!",
 					"type": "EXP"
 				},{
+					"flag": "fra",
+					"title": "Moved to Paris",
+					"at": "",
+					"description": "Moved to Paris, France, in 2008.",
+					"type": "PERS"
+				},{
 					"flag": "usa",
 					"title": "Semester Abroad",
 					"at": "San José State University",
 					"description": "Semester Abroad at San José State University, California. I studied Networks and Protocols, Operating Systems, Coding Theory and Entrepreneurship.",
 					"type": "EDU"
+				},{
+					"flag": "usa",
+					"title": "Moved to San Jose",
+					"at": "",
+					"description": "Moved to San Jose, California, United States in 2010.",
+					"type": "PERS"
 				}
 			]
 		},{
@@ -159,7 +189,7 @@
 					"flag": "bel",
 					"title": "Moved to Brussels",
 					"at": "",
-					"description": "Moved to Brussels, Belgium, in 2001 and lived there for 7 years.",
+					"description": "Moved to Brussels, Belgium, in 2001.",
 					"type": "PERS"
 				}
 			]
@@ -246,6 +276,11 @@
 							"icon": "php",
 							"level": 4,
 							"description": "PHP was my first focus when I discovered web development back in highschool, even though I haven't used it in a while..."
+						},{
+							"name": "ASP",
+							"icon": "asp",
+							"level": 3,
+							"description": "Never been a great fan of ASP, but hey, I can do a couple of tricks with it!"
 						}
 					]
 				},{
@@ -366,6 +401,11 @@
 							"icon": "svn",
 							"level": 4,
 							"description": "Theoretical knowledge and basic practical experience."
+						},{
+							"name": "Mercurial",
+							"icon": "mercurial",
+							"level": 4,
+							"description": "I started using Mercurial a short time ago, but I'm really eager to learn it!"
 						}
 					]
 				}
