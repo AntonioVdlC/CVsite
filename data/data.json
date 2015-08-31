@@ -22,11 +22,28 @@
 	},
 	"timeline": [
 		{
+			"date": 2015,
+			"elements":[
+				{
+					"flag": "usa",
+					"title": "Software Developer",
+					"at": "Stratocore",
+					"description": "I joined the technical team in the Atlanta office of Stratocore, to continue my work on the PPMS software.",
+					"type": "EXP"
+				},{
+					"flag": "usa",
+					"title": "Moved to Atlanta",
+					"at": "",
+					"description": "Moved to Atlanta, Georgia, United States, in 2015.",
+					"type": "PERS"
+				}
+			]
+		},{
 			"date": 2014,
 			"elements":[
 				{
 					"flag": "fra",
-					"title": "Web Developer",
+					"title": "Software Developer",
 					"at": "Stratocore",
 					"description": "After a sabbatical year, here I am again in a great French company doing web development and much more!",
 					"type": "EXP"
@@ -259,7 +276,7 @@
 						},{
 							"name": "CSS 3",
 							"icon": "css3",
-							"level": 6,
+							"level": 7,
 							"description": "Even though design has always been my weakness, I have improved a lot recently in making simple but efficient UIs."
 						},{
 							"name": "SASS",
@@ -269,17 +286,17 @@
 						},{
 							"name": "Django",
 							"icon": "django",
-							"level": 5,
+							"level": 4,
 							"description": "I've learnt Django recently and used my newly built knowledge to develop <a href='http://letsgortw.eu' target='_blank'>Let's Go RTW!</a>."
 						},{
 							"name": "PHP",
 							"icon": "php",
-							"level": 4,
+							"level": 3,
 							"description": "PHP was my first focus when I discovered web development back in highschool, even though I haven't used it in a while..."
 						},{
 							"name": "ASP",
 							"icon": "asp",
-							"level": 3,
+							"level": 2,
 							"description": "Never been a great fan of ASP, but hey, I can do a couple of tricks with it!"
 						}
 					]
@@ -342,6 +359,11 @@
 					"type": "Databases",
 					"list": [
 						{
+							"name": "SQL Server",
+							"icon": "sqlserver",
+							"level": 7,
+							"description": "I have heavily used SQL Server recently, mostly for creating an API based on stored procedures."
+						},{
 							"name": "MySQL",
 							"icon": "mysql",
 							"level": 7,
@@ -349,17 +371,17 @@
 						},{
 							"name": "MongoDB",
 							"icon": "mongodb",
-							"level": 7,
+							"level": 6,
 							"description": "I've just started to learn MongoDB after a long interest in NoSQL databases ... and I love it!"
 						},{
 							"name": "WebSQL",
 							"icon": "websql",
-							"level": 7,
+							"level": 6,
 							"description": "Pretty useful for hybrid mobile apps!"
 						},{
 							"name": "SQLite",
 							"icon": "sqlite",
-							"level": 6,
+							"level": 5,
 							"description": "Django's prefered database format ... and pretty light too!"
 						},{
 							"name": "IndexedDB",
@@ -374,17 +396,17 @@
 						{
 							"name": "Mac OS",
 							"icon": "macos",
-							"level": 7,
-							"description": "I've been working on Mac OS for a couple of years already!"
+							"level": 8,
+							"description": "I've been working on Mac OS for personnal projects for half a decade already!"
 						},{
 							"name": "Windows",
 							"icon": "windows",
-							"level": 7,
-							"description": "Even if I changed my personal computer to Mac a couple of years ago, I have worked with Windows 7 and Windows 8 as well!"
+							"level": 8,
+							"description": "Even if I changed my personal computer to Mac half a decade ago, I have always worked with Windows computers at work!"
 						},{
 							"name": "UNIX",
 							"icon": "unix",
-							"level": 5,
+							"level": 4,
 							"description": "I had some experiments with Debian, but I still fall for the apple!"
 						}
 					]
