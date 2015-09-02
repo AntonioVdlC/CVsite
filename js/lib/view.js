@@ -74,29 +74,27 @@
 	};
 
 	View.prototype.attachEventListeners = function (events) {
-		var body = document.getElementsByTagName("body");
-
 		Object.keys(events).forEach((key) => {
 			var type = key.split(" ")[0];
 			var target = key.split(" ")[1];
 			var callback = this.events[key];
 
-			// Attach the event to the body (event delegation)
-			body.addEventListener(type, function (e) {
+			// Attach the event to the document (event delegation)
+			document.addEventListener(type, function (e) {
 				if (e.target &&
 					// Looking for a class
 					((target.charAt(0) === "." &&
-						e.target.className.indexOf(target.slice(0, 1)) > -1) ||
+						e.target.className.indexOf(target.slice(1)) > -1) ||
 					// Looking for an id
 					(target.charAt(0) === "#" &&
-						e.target.id.indexOf(target.slice(0, 1)) > -1) ||
+						e.target.id.indexOf(target.slice(1)) > -1) ||
 					// Looking for a tag name
 					(e.target.tagName.indexOf(target) > -1))) {
 
 					// Callback
 					callback.call(this, e);
 				}
-			});
+			}.bind(this));
 		});
 	};
 

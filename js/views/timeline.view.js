@@ -7,10 +7,10 @@ var TimelineView = Object.create(View, {
 
 	template: {
 		// TODO - Calculate tl-line height dynamically
-		value: data => _t`
+		value: ({timeline}) => _t`
 			<div id="tl-line" style="height: 4800px;"></div> 
 			<ul id="tl">
-				${data.timeline.map(year => _t`
+				${timeline.map(year => _t`
 					<div class="tl-date" id="${year.date}">${year.date}</div>
 					${year.elements.map(element => _t`
 						<li class="tl-element ${element.type}">

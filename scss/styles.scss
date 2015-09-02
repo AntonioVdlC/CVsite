@@ -401,17 +401,17 @@ $footer-height: 25px;
 	}
 
 	/* -- RANDOM FACTS -- */
-	#randomFacts {
+	#random-facts {
 		display: none;
 
-		#randomFact{
+		#random-fact{
 			font-weight: bold;
 			text-align: center;
 			margin-top: 10%;
 			@include font-size(20);
 		}
 
-		#newRF{
+		#new-random-fact{
 			cursor: pointer;
 			text-decoration: underline;
 			color: blue;
@@ -862,14 +862,14 @@ $footer-height: 25px;
 		}
 
 		/* -- RANDOM FACTS -- */
-		#randomFacts {
+		#random-facts {
 
-			#randomFact{
+			#random-fact{
 				margin-top: 0%;
 				@include font-size(15);
 			}
 
-			#newRF{
+			#new-random-fact{
 				@include font-size(7);
 			}
 		}
@@ -1049,14 +1049,14 @@ $footer-height: 25px;
 		}
 
 		/* -- RANDOM FACTS -- */
-		#randomFacts {
+		#random-facts {
 
-			#randomFact{
+			#random-fact{
 				margin-top: 0%;
 				@include font-size(15);
 			}
 
-			#newRF{
+			#new-random-fact{
 				@include font-size(7);
 			}
 		}

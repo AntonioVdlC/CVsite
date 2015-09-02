@@ -8,18 +8,18 @@ var MainView = Object.create(View, {
 
 	// Template
 	template: {
-		value: data => _t`
+		value: ({infos}) => _t`
 			<div id="header">
-				<img id="picture" src="img/${data.infos.picture}" alt="Profile Picture" />
-				<a id="mail" href="mailto:${data.infos.mail}"  target="_blank"><img src="img/logo/mail.png" alt="Mail" /></a>
+				<img id="picture" src="img/${infos.picture}" alt="Profile Picture" />
+				<a id="mail" href="mailto:${infos.mail}"  target="_blank"><img src="img/logo/mail.png" alt="Mail" /></a>
 				<div id="links">
-					${data.infos.links.map(link => _t`
+					${infos.links.map(link => _t`
 						<a id="${link.type}" href="${link.link}"  target="_blank"><img class="logo" src="img/logo/${link.type}.png" alt="${link.type}" /></a>
 					`)}
 				</div>
 				<div id="vertical-separator"></div>
-				<h1 id="name">${data.infos.name}</h1>
-				<h2 id="title">${data.infos.title}</h2>
+				<h1 id="name">${infos.name}</h1>
+				<h2 id="title">${infos.title}</h2>
 			</div>
 
 			<div id="menu">
@@ -28,7 +28,7 @@ var MainView = Object.create(View, {
 					| 
 					<a href="#" id="a-skills">Skills</a> 
 					| 
-					<a href="#" id="a-randomFacts">Random Facts</a>
+					<a href="#" id="a-random-facts">Random Facts</a>
 				</p>
 				<p id="skills-menu">
 					<a href='#' id='a-hard-skills'>Technical Skills</a> 
@@ -40,7 +40,7 @@ var MainView = Object.create(View, {
 			<div id="content">
 				<div id="timeline"></div>
 				<div id="skills"></div>
-				<div id="randomFacts"></div>
+				<div id="random-facts"></div>
 			</div>
 			
 			<div id="footer">
@@ -58,7 +58,24 @@ var MainView = Object.create(View, {
 
 	// Events
 	events: {
-		value: {}
+		value: {
+			// TODO - Router?
+			"click #a-timeline": function showTimeline () {
+				document.getElementById("timeline").style.display = "block";
+				document.getElementById("skills").style.display = "none";
+				document.getElementById("random-facts").style.display = "none";
+			},
+			"click #a-skills": function showSkills () {
+				document.getElementById("timeline").style.display = "none";
+				document.getElementById("skills").style.display = "block";
+				document.getElementById("random-facts").style.display = "none";
+			},
+			"click #a-random-facts": function showRandomFacts () {
+				document.getElementById("timeline").style.display = "none";
+				document.getElementById("skills").style.display = "none";
+				document.getElementById("random-facts").style.display = "block";
+			}
+		}
 	}
 });
 
@@ -71,7 +88,10 @@ MainView.render = function () {
 
 	// Initialize sub-views
 	TimelineView.init({el: "timeline", parent: this});
+	SkillsView.init({el: "skills", parent: this});
+	RandomFactsView.init({el: "random-facts", parent: this});
 };
+
 
 document.addEventListener("DOMContentLoaded", function () {
 	MainView.init();
