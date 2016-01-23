@@ -4,17 +4,17 @@
 	function View () {}
 
 	// Initialize the view
-	View.prototype.init = function (options) {
+	View.prototype.init = function ({el, parent, data}) {
 		// DOM element that will contain the view
-		this.$el = (options && options.el) ? 
-			document.getElementById(options.el) : 
+		this.$el = (el) ? 
+			document.getElementById(el) : 
 			document.getElementsByTagName("body")[0];
 
 		// A link to the parent view (if nested view)
-		this.parent = options && options.parent || null;
+		this.parent = parent || null;
 
 		// Data passed to the view
-		this.data = options && options.data || {};
+		this.data = data || {};
 
 		// Get the data + render the view
 		this.getData(this.queries, this.render);
@@ -36,7 +36,7 @@
 					window.alert("Error " + code + ": " + text);
 				})
 			);
-		}, this);
+		});
 
 		// Once all the data is retrieve, call the callback
 		Promise.all(calls).then(callback.bind(this));
