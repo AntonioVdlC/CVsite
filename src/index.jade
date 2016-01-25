@@ -9,4 +9,52 @@ html(lang="en")
 		script(src="#{locals['dist/app.js'].substr(5)}")
 
 	body
-		p Hello, world!
+		div.page#info-page
+			img.profile-picture(src="img/#{locals.picture}" alt="Profile Picture")
+
+			p.profile-name #{locals.name}
+			p.profile-title #{locals.title}
+
+			p.profile-links
+				each link in locals.links
+					a(href="#{link.url}")
+						img(src="img/logo/#{link.img}" alt="#{link.alt}")
+			
+			p.about-link
+				a(href="#about-page") About
+
+		div.page#about-page
+
+			p.about-summary #{locals.summary}
+
+			div.about-container#about-education
+				each education in locals.education
+					p(id="about-education-#{education.id}")
+						p.about-container-title 
+							img(src="img/education/#{education.img}")
+							span #{education.school}
+						p.about-container-subtitle #{education.degree}
+						p.about-container-content #{education.description}
+
+			div.about-container#about-experience
+				each experience in locals.experience
+					p(id="about-experience-#{experience.id}")
+						p.about-container-title 
+							img(src="img/experience/#{experience.img}")
+							span #{experience.position}
+						p.about-container-subtitle #{experience.company}
+						p.about-container-content #{experience.description}
+
+			div.about-container#about-interests
+				each interest in locals.interests
+					p(id="about-interests-#{interest.id}")
+						p.about-container-title 
+							img(src="img/interests/#{interest.img}")
+							span #{interest.name}
+						p.about-container-subtitle 
+						p.about-container-content #{interest.description}
+
+			p.skills-link
+				a(href="#skills-page") Skills
+
+		div.page#skills-page
