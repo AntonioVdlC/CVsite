@@ -4,20 +4,22 @@
   "description": "My personal website.",
   "main": "index.js",
   "scripts": {
-    "clean": "rimraf dist && mkdir dist",
-
+    "clean": "rimraf dist && mkdirp dist/img",
+    
     "prebuild": "npm run clean",
-    "build": "npm run build:css && npm run build:js && npm run build:html",
-    "build:css": "stylus src/css/app.styl --out dist/ --compress && hashmark -s -l 8 -m hash.json dist/app.css 'dist/{name}.{hash}{ext}' && rimraf dist/app.css",
-    "build:js": "rollup src/js/app.js | babel | uglifyjs | hashmark -s -l 8 -n dist/app.js -m hash.json 'dist/{name}.{hash}{ext}'",
-    "build:html": "jade src/index.jade --out dist --obj hash.json",
+
+    "build": "npm run build:css && npm run build:js && npm run build:html && npm run build:img",
+    "build:css": "stylus src/css/app.styl --out dist/ --compress && hashmark -s -l 8 dist/app.css -m data.json 'dist/{name}.{hash}{ext}' && rimraf dist/app.css",
+    "build:js": "rollup src/js/app.js | babel | uglifyjs | hashmark -s -l 8 -n dist/app.js -m data.json 'dist/{name}.{hash}{ext}'",
+    "build:html": "jade src/index.jade --out dist --obj data.json",
+    "build:img": "cp -r src/img/ dist/img/",
     
     "test": "echo \"Error: no test specified\" && exit 1",
     
     "watch": "parallelshell \"npm run watch:css\" \"npm run watch:js\" \"npm run watch:html\"",
-    "watch:css": "onchange 'src/css/*.styl' -- npm run build:css",
-    "watch:js": "onchange 'src/js/*.js' -- npm run build:js",
-    "watch:html": "onchange 'src/index.html' -- npm run build:html",
+    "watch:css": "onchange 'src/css/*' -- npm run build:css",
+    "watch:js": "onchange 'src/js/*' -- npm run build:js",
+    "watch:html": "onchange 'src/index.jade' -- npm run build:html",
     
     "open:dev": "opener http://localhost:9090",
     "open:prod": "opener http://antoniovdlc.me",
@@ -43,6 +45,7 @@
     "hashmark": "^3.1.0",
     "http-server": "^0.8.5",
     "jade": "^1.11.0",
+    "mkdirp": "^0.5.1",
     "onchange": "^2.0.0",
     "opener": "^1.4.1",
     "parallelshell": "^2.0.0",
