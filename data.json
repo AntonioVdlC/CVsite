@@ -1,0 +1,34 @@
+{
+  "dist/app.js": "dist/app.01ba4719.js",
+  "dist/app.css": "dist/app.e3b0c442.css",
+  "name": "Antonio Villagra De La Cruz",
+  "title": "Junior Software Engineer",
+  "picture": "avdlc.jpg",
+  "links": [
+    {
+      "alt": "LinkedIn",
+      "img": "linkedin.png",
+      "url": "https://www.linkedin.com/in/antoniovdlc"
+    },
+    {
+      "alt": "GitHub",
+      "img": "github.png",
+      "url": "https://github.com/AntonioVdlC"
+    },
+    {
+      "alt": "Twitter",
+      "img": "twitter.png",
+      "url": "https://twitter.com/AntonioVdlC"
+    },
+    {
+      "alt": "Medium",
+      "img": "medium.png",
+      "url": "https://medium.com/@AntonioVdlC"
+    },
+    {
+      "alt": "Contact",
+      "img": "email.png",
+      "url": "mailto:antonio@villagradelacruz.com"
+    }
+  ]
+}
