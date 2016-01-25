@@ -30,5 +30,227 @@
       "img": "email.png",
       "url": "mailto:antonio@villagradelacruz.com"
     }
+  ],
+  "education": [
+    {
+      "id": "efrei",
+      "img": "efrei.png",
+      "school": "EFREI Engineering Institute",
+      "degree": "M.Sc. in Computer Engineering",
+      "description": "whoop whoop"
+    },
+    {
+      "id": "ntu",
+      "img": "ntu.png",
+      "school": "Nanyang Technological University",
+      "degree": "Exchange Semester",
+      "description": "yala"
+    },
+    {
+      "id": "upmlv",
+      "img": "upmlv.png",
+      "school": "Université Paris-Est Marne-la-Valléé",
+      "degree": "B.Sc. in Mathematics and Computer Science",
+      "description": "???"
+    },
+    {
+      "id": "sjsu",
+      "img": "sjsu.png",
+      "school": "San Jose State University",
+      "degree": "Exchange Semester",
+      "description": "lol"
+    },
+    {
+      "id": "lfb",
+      "img": "lfb.png",
+      "school": "Lycée Français Jean-Monnet",
+      "degree": "French Bachalaureate in Sciences",
+      "description": ""
+    }
+  ],
+  "experience": [
+    {
+      "id": "stratocore",
+      "img": "stratocore.png",
+      "position": "Software Engineer",
+      "company": "Stratocore",
+      "description": ""
+    },
+    {
+      "id": "structis-2",
+      "img": "structis.png",
+      "position": "Mobile Applications R&D Engineer",
+      "company": "Bouygues Construction - Structis",
+      "description": ""
+    },
+    {
+      "id": "structis-1",
+      "img": "structis.png",
+      "position": "Windows Sidebar Gadgets Developer",
+      "company": "Bouygues Construction - Structis",
+      "description": ""
+    },
+    {
+      "id": "efrei-int",
+      "img": "efrei-int.png",
+      "position": "President",
+      "company": "EFREI International",
+      "description": ""
+    },
+    {
+      "id": "ecole-louvre",
+      "img": "ecole-louvre.png",
+      "position": "Intern",
+      "company": "Bibliothèque de l'Ecole du Louvre",
+      "description": ""
+    }
+  ],
+  "interests": [
+    {
+      "id": "travel",
+      "img": "travel.png",
+      "name": "Travel",
+      "description": ""
+    },
+    {
+      "id": "cycling",
+      "img": "cycling.png",
+      "name": "Road Cycling",
+      "description": ""
+    },
+    {
+      "id": "guitar",
+      "img": "guitar.png",
+      "name": "Guitar",
+      "description": ""
+    }
+  ],
+  "skills": [
+    {
+      "name": "HTML",
+      "type": "web",
+      "level": "",
+      "description": ""
+    },
+    {
+      "name": "JavaScript",
+      "type": "web",
+      "level": "",
+      "description": ""
+    },
+    {
+      "name": "CSS",
+      "type": "web",
+      "level": "",
+      "description": ""
+    },
+    {
+      "name": "Django",
+      "type": "web",
+      "level": "",
+      "description": ""
+    },
+    {
+      "name": "PHP",
+      "type": "web",
+      "level": "",
+      "description": ""
+    },
+    {
+      "name": "PhoneGape",
+      "type": "mobile",
+      "level": "",
+      "description": ""
+    },
+    {
+      "name": "Sencha Touch",
+      "type": "mobile",
+      "level": "",
+      "description": ""
+    },
+    {
+      "name": "Java",
+      "type": "programming",
+      "level": "",
+      "description": ""
+    },
+    {
+      "name": "C/C++",
+      "type": "programming",
+      "level": "",
+      "description": ""
+    },
+    {
+      "name": "Python",
+      "type": "programming",
+      "level": "",
+      "description": ""
+    },
+    {
+      "name": "SQL Server",
+      "type": "database",
+      "level": "",
+      "description": ""
+    },
+    {
+      "name": "MySQL",
+      "type": "database",
+      "level": "",
+      "description": ""
+    },
+    {
+      "name": "MongoDB",
+      "type": "database",
+      "level": "",
+      "description": ""
+    },
+    {
+      "name": "IndexedDB",
+      "type": "database",
+      "level": "",
+      "description": ""
+    },
+    {
+      "name": "Git",
+      "type": "tools",
+      "level": "",
+      "description": ""
+    },
+    {
+      "name": "Mercurial",
+      "type": "tools",
+      "level": "",
+      "description": ""
+    },
+    {
+      "name": "French",
+      "type": "languages",
+      "level": "",
+      "description": ""
+    },
+    {
+      "name": "Spanish",
+      "type": "languages",
+      "level": "",
+      "description": ""
+    },
+    {
+      "name": "English",
+      "type": "languages",
+      "level": "",
+      "description": ""
+    },
+    {
+      "name": "Japanese",
+      "type": "languages",
+      "level": "",
+      "description": ""
+    },
+    {
+      "name": "",
+      "type": "",
+      "level": "",
+      "description": ""
+    }
   ]
 }
