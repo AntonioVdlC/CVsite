@@ -9,6 +9,7 @@ html(lang="en")
 		script(src="#{locals['dist/app.js'].substr(5)}")
 
 	body
+		// Info Page
 		div.page#info-page
 			img.profile-picture(src="img/#{locals.picture}" alt="Profile Picture")
 
@@ -23,6 +24,7 @@ html(lang="en")
 			p.about-link
 				a(href="#about-page") About
 
+		// About Page
 		div.page#about-page
 
 			p.about-summary #{locals.summary}
@@ -57,4 +59,25 @@ html(lang="en")
 			p.skills-link
 				a(href="#skills-page") Skills
 
+		// Skills Page
 		div.page#skills-page
+
+			p.skills-filters
+				each filter in locals.skills.map((e) => e.type).reduce((p, c) => { if (p.indexOf(c) < 0) p.push(c); return p;}, []).sort()
+					span(id="filter-#{filter}" class="#{filter}") #{filter}
+
+			ul.skills-cloud
+				each skill in locals.skills.sort(() => 0.5 - Math.random())
+					li(id="skill-#{skill.name.replace(/ |\/|\+/g, '').toLowerCase()}" class="#{skill.type}") #{skill.name} 
+
+			each skill in locals.skills
+				div.skill-popup(id="description-#{skill.name.replace(/ |\/|\+/g, '').toLowerCase()}")
+					p.skill-name #{skill.name}
+					p.skill-level #{skill.level}
+					p.skill-description #{skill.description}
+
+		// Footer
+		div.footer
+			span.copyright ©2016 Antonio Villagra De La Cruz
+			span.license 
+				a(href="https://github.com/AntonioVdlC/CVsite/") MIT Licence
