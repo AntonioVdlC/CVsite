@@ -1,6 +1,6 @@
 {
+  "dist/app.css": "dist/app.8c748881.css",
   "dist/app.js": "dist/app.01ba4719.js",
-  "dist/app.css": "dist/app.e3b0c442.css",
   "name": "Antonio Villagra De La Cruz",
   "title": "Junior Software Engineer",
   "picture": "avdlc.jpg",
@@ -129,127 +129,121 @@
     {
       "name": "HTML",
       "type": "web",
-      "level": "",
+      "level": 8,
       "description": ""
     },
     {
       "name": "JavaScript",
       "type": "web",
-      "level": "",
+      "level": 8,
       "description": ""
     },
     {
       "name": "CSS",
       "type": "web",
-      "level": "",
+      "level": 8,
       "description": ""
     },
     {
       "name": "Django",
       "type": "web",
-      "level": "",
+      "level": 4,
       "description": ""
     },
     {
       "name": "PHP",
       "type": "web",
-      "level": "",
+      "level": 3,
       "description": ""
     },
     {
-      "name": "PhoneGape",
+      "name": "PhoneGap",
       "type": "mobile",
-      "level": "",
+      "level": 7,
       "description": ""
     },
     {
       "name": "Sencha Touch",
       "type": "mobile",
-      "level": "",
+      "level": 6,
       "description": ""
     },
     {
       "name": "Java",
       "type": "programming",
-      "level": "",
+      "level": 4,
       "description": ""
     },
     {
       "name": "C/C++",
       "type": "programming",
-      "level": "",
+      "level": 4,
       "description": ""
     },
     {
       "name": "Python",
       "type": "programming",
-      "level": "",
+      "level": 4,
       "description": ""
     },
     {
       "name": "SQL Server",
       "type": "database",
-      "level": "",
+      "level": 7,
       "description": ""
     },
     {
       "name": "MySQL",
       "type": "database",
-      "level": "",
+      "level": 6,
       "description": ""
     },
     {
       "name": "MongoDB",
       "type": "database",
-      "level": "",
+      "level": 5,
       "description": ""
     },
     {
       "name": "IndexedDB",
       "type": "database",
-      "level": "",
+      "level": 5,
       "description": ""
     },
     {
       "name": "Git",
       "type": "tools",
-      "level": "",
+      "level": 7,
       "description": ""
     },
     {
       "name": "Mercurial",
       "type": "tools",
-      "level": "",
+      "level": 7,
       "description": ""
     },
     {
       "name": "French",
       "type": "languages",
-      "level": "",
+      "level": 10,
       "description": ""
     },
     {
       "name": "Spanish",
       "type": "languages",
-      "level": "",
+      "level": 9,
       "description": ""
     },
     {
       "name": "English",
       "type": "languages",
-      "level": "",
+      "level": 9,
       "description": ""
     },
     {
       "name": "Japanese",
       "type": "languages",
-      "level": "",
-      "description": ""
-    },
-    {
-      "name": "",
-      "type": "",
-      "level": "",
+      "level": 4,
       "description": ""
     }
   ]
