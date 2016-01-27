@@ -16,10 +16,11 @@ html(lang="en")
 			p.profile-name #{locals.name}
 			p.profile-title #{locals.title}
 
-			p.profile-links
+			ul.profile-links
 				each link in locals.links
-					a(href="#{link.url}")
-						img(src="img/logo/#{link.img}" alt="#{link.alt}")
+					li
+						a(href="#{link.url}")
+							img(src="img/logo/#{link.img}" alt="#{link.alt}")
 			
 			p.about-link
 				a(href="#about-page") About
@@ -29,27 +30,27 @@ html(lang="en")
 
 			p.about-summary #{locals.summary}
 
-			div.about-container#about-education
+			ul.about-container#about-education
 				each education in locals.education
-					p(id="about-education-#{education.id}")
+					li(id="about-education-#{education.id}")
 						p.about-container-title 
 							img(src="img/education/#{education.img}")
 							span #{education.school}
 						p.about-container-subtitle #{education.degree}
 						p.about-container-content #{education.description}
 
-			div.about-container#about-experience
+			ul.about-container#about-experience
 				each experience in locals.experience
-					p(id="about-experience-#{experience.id}")
+					li(id="about-experience-#{experience.id}")
 						p.about-container-title 
 							img(src="img/experience/#{experience.img}")
 							span #{experience.position}
 						p.about-container-subtitle #{experience.company}
 						p.about-container-content #{experience.description}
 
-			div.about-container#about-interests
+			ul.about-container#about-interests
 				each interest in locals.interests
-					p(id="about-interests-#{interest.id}")
+					li(id="about-interests-#{interest.id}")
 						p.about-container-title 
 							img(src="img/interests/#{interest.img}")
 							span #{interest.name}
@@ -62,9 +63,9 @@ html(lang="en")
 		// Skills Page
 		div.page#skills-page
 
-			p.skills-filters
+			ul.skills-filters
 				each filter in locals.skills.map((e) => e.type).reduce((p, c) => { if (p.indexOf(c) < 0) p.push(c); return p;}, []).sort()
-					span(id="filter-#{filter}" class="#{filter}") #{filter}
+					li(id="filter-#{filter}" class="#{filter}") #{filter}
 
 			ul.skills-cloud
 				each skill in locals.skills.sort(() => 0.5 - Math.random())
