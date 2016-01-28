@@ -1,0 +1,60 @@
+// About Summary
+.about-summary
+	border 2px solid darkgrey
+	display inline-block
+	font-size 1.5em
+	margin-top 10vh
+	margin-left 15vw
+	margin-right 15vw
+	padding-top 2vh
+	padding-bottom 2vh
+	text-shadow 2px 3px 5px rgba(0,0,0,0.3)
+	width 70vw
+
+// About Container
+.about-container
+	width 30vw
+	height 60vh
+	overflow scroll
+	padding 0
+	list-style none
+	float left
+	box-shadow 0px 0px 0px 1px darkgrey
+	
+	&:nth-of-type(1)
+		margin-left 1vw
+		margin-right 4vw
+	
+	&:nth-of-type(3)
+		margin-left 4vw
+		margin-right 1vw
+		
+	li
+		text-align left
+		border-top 1px solid darkgrey
+		
+		&:nth-of-type(1)
+			border-top none
+		
+		.about-container-title
+		.about-container-subtitle
+			margin 0
+			padding 0.5vh
+			background lightgrey
+			
+		.about-container-title
+			font-size: 1.2em
+			
+			img
+				height 20px
+				width 20px
+			
+			span
+				padding-left 10px
+			
+		.about-container-subtitle
+			border-bottom 1px solid black
+			padding-left 35px
+
+		.about-container-content
+			padding-left 35px
