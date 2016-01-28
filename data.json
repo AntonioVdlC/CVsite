@@ -1,5 +1,5 @@
 {
-  "dist/app.css": "dist/app.8c748881.css",
+  "dist/app.css": "dist/app.3c3e2a75.css",
   "dist/app.js": "dist/app.01ba4719.js",
   "name": "Antonio Villagra De La Cruz",
   "title": "Junior Software Engineer",
@@ -31,6 +31,7 @@
       "url": "mailto:antonio@villagradelacruz.com"
     }
   ],
+  "summary": "I am a junior software engineer! #whoopwhoop",
   "education": [
     {
       "id": "efrei",
