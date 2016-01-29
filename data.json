@@ -1,5 +1,5 @@
 {
-  "dist/app.css": "dist/app.3c3e2a75.css",
+  "dist/app.css": "dist/app.552c0245.css",
   "dist/app.js": "dist/app.01ba4719.js",
   "name": "Antonio Villagra De La Cruz",
   "title": "Junior Software Engineer",
@@ -48,9 +48,9 @@
       "description": "yala"
     },
     {
-      "id": "upmlv",
-      "img": "upmlv.png",
-      "school": "Université Paris-Est Marne-la-Valléé",
+      "id": "upem",
+      "img": "upem.png",
+      "school": "Université Paris-Est Marne-la-Vallée",
       "degree": "B.Sc. in Mathematics and Computer Science",
       "description": "???"
     },
@@ -111,18 +111,35 @@
       "id": "travel",
       "img": "travel.png",
       "name": "Travel",
+      "subtitle": "25+ countries ... and counting!",
       "description": ""
     },
     {
       "id": "cycling",
       "img": "cycling.png",
       "name": "Road Cycling",
+      "subtitle": "Because those guys are just heroes!",
       "description": ""
     },
     {
       "id": "guitar",
       "img": "guitar.png",
       "name": "Guitar",
+      "subtitle": "",
+      "description": ""
+    },
+    {
+      "id": "vexillology",
+      "img": "vexillology.png",
+      "name": "Vexillology",
+      "subtitle": "Vexillolo ... what?",
+      "description": ""
+    },
+    {
+      "id": "education",
+      "img": "education.png",
+      "name": "Education",
+      "subtitle": "",
       "description": ""
     }
   ],
