@@ -65,17 +65,13 @@ html(lang="en")
 
 			ul.skills-filters
 				each filter in locals.skills.map((e) => e.type).reduce((p, c) => { if (p.indexOf(c) < 0) p.push(c); return p;}, []).sort()
-					li(id="filter-#{filter}" class="#{filter}") #{filter}
+					li(id="filter-#{filter}" class="#{filter}") 
+						span.filter-name #{filter}
 
 			ul.skills-cloud
 				each skill in locals.skills.sort(() => 0.5 - Math.random())
-					li(id="skill-#{skill.name.replace(/ |\/|\+/g, '').toLowerCase()}" class="#{skill.type}") #{skill.name} 
-
-			each skill in locals.skills
-				div.skill-popup(id="description-#{skill.name.replace(/ |\/|\+/g, '').toLowerCase()}")
-					p.skill-name #{skill.name}
-					p.skill-level #{skill.level}
-					p.skill-description #{skill.description}
+					li(class="#{skill.type} level-#{skill.level}") 
+						span.skill-name #{skill.name}
 
 		// Footer
 		div.footer
