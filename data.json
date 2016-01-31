@@ -1,5 +1,5 @@
 {
-  "dist/app.css": "dist/app.6701e1f1.css",
+  "dist/app.css": "dist/app.76b4404b.css",
   "dist/app.js": "dist/app.01ba4719.js",
   "name": "Antonio Villagra De La Cruz",
   "title": "Junior Software Engineer",
@@ -26,42 +26,42 @@
       "url": "https://medium.com/@AntonioVdlC"
     }
   ],
-  "summary": "I am a junior software engineer! #whoopwhoop",
+  "summary": "I love finding solutions to problems. I chose computer science because it is everywhere and this choice does not limit me and gives me the possibility to work on anything from anywhere!",
   "education": [
     {
       "id": "efrei",
       "img": "efrei.png",
       "school": "EFREI Engineering Institute",
       "degree": "M.Sc. in Computer Engineering",
-      "description": "whoop whoop"
+      "description": "After 5 years of studying I obtained my Master's of Science in Computer Engineering with Honours in 2013! Besides solid skills in computer science, mathematics and management, I also had the opportunity to lead the international club for a year and to spend 2 semesters abroad!"
     },
     {
       "id": "ntu",
       "img": "ntu.png",
       "school": "Nanyang Technological University",
       "degree": "Exchange Semester",
-      "description": "yala"
+      "description": "I loved every single second of my time in Singapore studying at NTU! I studied Artificial Intelligence, Neural Networks, Embedded Systems and Organisational Leadership. This semester was the highlight of my student life and a great opening into Asian culture as a whole."
     },
     {
       "id": "upem",
       "img": "upem.png",
       "school": "Université Paris-Est Marne-la-Vallée",
       "degree": "B.Sc. in Mathematics and Computer Science",
-      "description": "???"
+      "description": "While pursuing my engineering degree at EFREI, I obtained a Bachelor of Science with Honours from a partner university. I never put a feet in there, and I would have trouble locating it on a map, but I still somehow hold a diploma from there. It was actually useful for my exchange in Singapore as I could them take Master's level classes!"
     },
     {
       "id": "sjsu",
       "img": "sjsu.png",
       "school": "San Jose State University",
       "degree": "Exchange Semester",
-      "description": "lol"
+      "description": "During my time in San Jose, I studied the likes of OS, Cody Theory, Networks and Entrepreneurship and visited a few companies in the area. It was also a first interesting glimpse into American culture and into the Bay Area. My favorite part was visiting Lake Tahoe and realising that there is more to California than sun and beaches!"
     },
     {
       "id": "lfb",
       "img": "lfb.png",
       "school": "Lycée Français Jean-Monnet",
-      "degree": "French Bachalaureate in Sciences",
-      "description": ""
+      "degree": "French Baccalaureate in Sciences",
+      "description": "I attended a French international school for my secondary education in Brussels after spending my early years in Africa. I always loved sciences and at that time I wanted to become an astronmer!"
     }
   ],
   "experience": [
