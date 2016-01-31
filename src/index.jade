@@ -3,7 +3,7 @@ html(lang="en")
 	head
 		meta(charset="utf-8")
 
-		title CVSite | Antonio Villagra De La Cruz
+		title Antonio Villagra De La Cruz
 	
 		link(href="#{locals['dist/app.css'].substr(5)}" rel="stylesheet")
 		script(src="#{locals['dist/app.js'].substr(5)}")
@@ -19,7 +19,7 @@ html(lang="en")
 			ul.profile-links
 				each link in locals.links
 					li
-						a(href="#{link.url}")
+						a(href="#{link.url}" target="_blank")
 							img(src="img/logo/#{link.img}" alt="#{link.alt}")
 			
 			p.about-link
@@ -70,11 +70,9 @@ html(lang="en")
 
 			ul.skills-cloud
 				each skill in locals.skills.sort(() => 0.5 - Math.random())
-					li(class="#{skill.type} level-#{skill.level}") 
+					li(class="#{skill.type} level-#{skill.level}" id="#{skill.name.replace(/ |\/|\+/g, '').toLowerCase()}") 
 						span.skill-name #{skill.name}
 
-		// Footer
-		div.footer
-			span.copyright ©2016 Antonio Villagra De La Cruz
-			span.license 
-				a(href="https://github.com/AntonioVdlC/CVsite/") MIT Licence
+			p.skills-description
+				each skill in locals.skills
+					span(id="#{skill.name.replace(/ |\/|\+/g, '').toLowerCase()}-description") #{skill.description}
