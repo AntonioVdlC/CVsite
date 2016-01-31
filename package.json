@@ -19,7 +19,7 @@
     "watch": "parallelshell \"npm run watch:css\" \"npm run watch:js\" \"npm run watch:html\"",
     "watch:css": "onchange 'src/css/**/*' -- npm run build:css",
     "watch:js": "onchange 'src/js/**/*' -- npm run build:js",
-    "watch:html": "onchange 'src/index.jade' -- npm run build:html",
+    "watch:html": "onchange 'src/index.jade' 'data.json' -- npm run build:html",
     
     "open:dev": "opener http://localhost:9090",
     "open:prod": "opener http://antoniovdlc.me",
