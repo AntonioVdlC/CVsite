@@ -1,5 +1,5 @@
 {
-  "dist/app.css": "dist/app.76b4404b.css",
+  "dist/app.css": "dist/app.7663684d.css",
   "dist/app.js": "dist/app.01ba4719.js",
   "name": "Antonio Villagra De La Cruz",
   "title": "Junior Software Engineer",
@@ -70,35 +70,35 @@
       "img": "stratocore.png",
       "position": "Software Engineer",
       "company": "Stratocore",
-      "description": ""
+      "description": "For almost 2 years, I was the lead software engineer at Stratocore, a small company that provides a management SaaS solution to research labs. My role as a software engineer was to build a new API-based codebase from the legacy monolithic app (PPMS) and to add new features along the way. I also championned new software development processes such as a branch-based version control workflow, specs and a test strategy."
     },
     {
       "id": "structis-2",
       "img": "structis.png",
       "position": "Mobile Applications R&D Engineer",
       "company": "Bouygues Construction - Structis",
-      "description": ""
+      "description": "Working withing the R&D department of Structis was a great experience! For 6 months, I was given almost complete freedom to experiment and build hybrid mobile apps based on the company's internal software and mobile strategy. I designed an enterprise appstore, maintained and developped new versions of the company's directory app and developped a mobile version of the company's document management tool."
     },
     {
       "id": "structis-1",
       "img": "structis.png",
       "position": "Windows Sidebar Gadgets Developer",
       "company": "Bouygues Construction - Structis",
-      "description": ""
+      "description": "My first real experience in a real job was during my summer internship in 2012. At Structis, within the R&D department, I was in charge of studying the different ways Windows sidebar gadgets could be used within the company. I also wrote a 55-page development guide and crafted 14 production-ready prototypes. All that in only 14 weeks!"
     },
     {
       "id": "efrei-int",
       "img": "efrei-int.png",
       "position": "President",
       "company": "EFREI International",
-      "description": ""
+      "description": "This is probably the position I am the proudest of, even though it has nothing to do with computers or it being an actual job. After 2 years of active involvement in the international club at EFREI, I step up and became president for a year, welcoming more than 80 international students and managing a 40-people team and almost $10k of financing."
     },
     {
       "id": "ecole-louvre",
       "img": "ecole-louvre.png",
       "position": "Intern",
       "company": "Bibliothèque de l'Ecole du Louvre",
-      "description": ""
+      "description": "During the month of July 2009, I was working, alongside some of my classmates, at the Library of the Ecole du Louvre. It was a physical and repetitive work (moving books around, doing the inventory and scanning exams), but it was still an interesting and rewarding experience. I got to see the Mona Lisa almost every day!"
     }
   ],
   "interests": [
