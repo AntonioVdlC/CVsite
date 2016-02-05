@@ -70,7 +70,7 @@
       "img": "stratocore.png",
       "position": "Software Engineer",
       "company": "Stratocore",
-      "description": "For almost 2 years, I was the lead software engineer at Stratocore, a small company that provides a management SaaS solution to research labs. My role as a software engineer was to build a new API-based codebase from the legacy monolithic app (PPMS) and to add new features along the way. I also championned new software development processes such as a branch-based version control workflow, specs and a test strategy."
+      "description": "For almost 2 years, I was the lead software engineer at Stratocore, a small company that provides a management SaaS solution (PPMS) to research labs. My role as a software engineer was to build a new API-based codebase from the legacy monolithic app and to add new features along the way. I also championned new software development processes such as a branch-based version control workflow, specs and a test strategy."
     },
     {
       "id": "structis-2",
@@ -128,14 +128,14 @@
       "img": "vexillology.png",
       "name": "Vexillology",
       "subtitle": "Vexillolo ... what?",
-      "description": ""
+      "description": "I remember the day we got our first dictionnaries in primary school. I was still in the Ivory Coast, and the first few pages where filled with the flags of all the countries (the last few where maps). I guess I was so bored in class that I went on to learn every country, its capital and its flag! That knowledge has proven more useful than I thought and I love updating my wisdom on each and every country by travelling and experiencing them!"
     },
     {
       "id": "education",
       "img": "education.png",
       "name": "Education",
-      "subtitle": "",
-      "description": ""
+      "subtitle": "Moving civilisation forward, one book at a time!",
+      "description": "Maybe it is because I come from a family of teachers, or maybe it is because I have experienced numerous educational systems, but I strongly believe that if we want a better world and a better society, we need a better education for everyone!"
     }
   ],
   "skills": [
