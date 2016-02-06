@@ -1,5 +1,5 @@
 {
-  "dist/app.css": "dist/app.7663684d.css",
+  "dist/app.css": "dist/app.7af0a6fd.css",
   "dist/app.js": "dist/app.01ba4719.js",
   "name": "Antonio Villagra De La Cruz",
   "title": "Junior Software Engineer",
@@ -107,21 +107,21 @@
       "img": "travel.png",
       "name": "Travel",
       "subtitle": "25+ countries ... and counting!",
-      "description": ""
+      "description": "Travelling has been part of my life for as long as I can remember. Growing up in Africa, then living in Europe for almost a decade and then taking a year to travel the world has been an incredibly enriching experience and I hope I can continue enriching myself and the people I meet throughout my next adventures!"
     },
     {
       "id": "cycling",
       "img": "cycling.png",
       "name": "Road Cycling",
       "subtitle": "Because those guys are just heroes!",
-      "description": ""
+      "description": "The first time I watched a stage of the Tour de France on TV, I didn't really get it ... A breakaway? A peloton? 5 minutes ahead? Road cycling is a very interesting sport as it is a team sport with individual ranking. It is more tactical than it may seem and it's really about going 100% at the right time. I also like riding bikes, and I plan on investing more of my time cycling around!"
     },
     {
       "id": "guitar",
       "img": "guitar.png",
       "name": "Guitar",
-      "subtitle": "",
-      "description": ""
+      "subtitle": "Rock 'n' Roll",
+      "description": "I started playing the guitar out of boredom one summer once in college, and I ended up playing it for a couple of years regularly until I put my electric guitar aside. I am still an avid rock music fan and like to play a few chords here and there, but I definitely need to pick up my guitar more often!"
     },
     {
       "id": "vexillology",
