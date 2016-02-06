@@ -10,7 +10,7 @@
 
     "build": "npm run build:css && npm run build:js && npm run build:html && npm run build:img",
     "build:css": "rimraf dist/*.css && stylus src/css/app.styl --out dist/ --compress && hashmark -s -l 8 dist/app.css -m data.json 'dist/{name}.{hash}{ext}' && rimraf dist/app.css && npm run build:html",
-    "build:js": "rimraf dist/*.js && rollup src/js/app.js | babel | uglifyjs | hashmark -s -l 8 -n dist/app.js -m data.json 'dist/{name}.{hash}{ext}' && npm run build:html",
+    "build:js": "rimraf dist/*.js && rollup src/js/app.js -o dist/app.js && babel dist/app.js | uglifyjs | hashmark -s -l 8 -n dist/app.js -m data.json 'dist/{name}.{hash}{ext}' && rimraf dist/app.js && npm run build:html",
     "build:html": "jade src/index.jade --out dist --obj data.json",
     "build:img": "cp -r src/img/ dist/img/",
     
