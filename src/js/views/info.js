@@ -8,7 +8,6 @@ export default {
 
 // View events
 function events () {
-	
 	// Scroll to the about page when 
 	// clicking on the about link
 	document
