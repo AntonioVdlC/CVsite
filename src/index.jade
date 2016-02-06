@@ -56,23 +56,3 @@ html(lang="en")
 							span #{interest.name}
 						p.about-container-subtitle #{interest.subtitle}
 						p.about-container-content #{interest.description}
-
-			p.skills-link
-				a(href="#skills") Skills
-
-		// Skills Page
-		div.page#skills
-
-			ul.skills-filters
-				each filter in locals.skills.map((e) => e.type).reduce((p, c) => { if (p.indexOf(c) < 0) p.push(c); return p;}, []).sort()
-					li(id="filter-#{filter}" class="#{filter}") 
-						span.filter-name #{filter}
-
-			ul.skills-cloud
-				each skill in locals.skills.sort(() => 0.5 - Math.random())
-					li(class="#{skill.type} level-#{skill.level}" id="#{skill.name.replace(/ |\/|\+/g, '').toLowerCase()}") 
-						span.skill-name #{skill.name}
-
-			p.skills-description
-				each skill in locals.skills
-					span(id="#{skill.name.replace(/ |\/|\+/g, '').toLowerCase()}-description") #{skill.description}

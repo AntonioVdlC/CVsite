@@ -1,5 +1,5 @@
 {
-  "dist/app.css": "dist/app.7af0a6fd.css",
+  "dist/app.css": "dist/app.e2e5c630.css",
   "dist/app.js": "dist/app.01ba4719.js",
   "name": "Antonio Villagra De La Cruz",
   "title": "Junior Software Engineer",
@@ -136,104 +136,6 @@
       "name": "Education",
       "subtitle": "Moving civilisation forward, one book at a time!",
       "description": "Maybe it is because I come from a family of teachers, or maybe it is because I have experienced numerous educational systems, but I strongly believe that if we want a better world and a better society, we need a better education for everyone!"
-    }
-  ],
-  "skills": [
-    {
-      "name": "HTML",
-      "type": "web",
-      "level": 4,
-      "description": ""
-    },
-    {
-      "name": "JavaScript",
-      "type": "web",
-      "level": 5,
-      "description": ""
-    },
-    {
-      "name": "CSS",
-      "type": "web",
-      "level": 4,
-      "description": ""
-    },
-    {
-      "name": "Django",
-      "type": "web",
-      "level": 2,
-      "description": ""
-    },
-    {
-      "name": "PHP",
-      "type": "web",
-      "level": 2,
-      "description": ""
-    },
-    {
-      "name": "PhoneGap",
-      "type": "mobile",
-      "level": 4,
-      "description": ""
-    },
-    {
-      "name": "Sencha Touch",
-      "type": "mobile",
-      "level": 2,
-      "description": ""
-    },
-    {
-      "name": "Java",
-      "type": "programming",
-      "level": 2,
-      "description": ""
-    },
-    {
-      "name": "C/C++",
-      "type": "programming",
-      "level": 2,
-      "description": ""
-    },
-    {
-      "name": "Python",
-      "type": "programming",
-      "level": 2,
-      "description": ""
-    },
-    {
-      "name": "SQL Server",
-      "type": "database",
-      "level": 3,
-      "description": ""
-    },
-    {
-      "name": "MySQL",
-      "type": "database",
-      "level": 3,
-      "description": ""
-    },
-    {
-      "name": "MongoDB",
-      "type": "database",
-      "level": 2,
-      "description": ""
-    },
-    {
-      "name": "IndexedDB",
-      "type": "database",
-      "level": 2,
-      "description": ""
-    },
-    {
-      "name": "Git",
-      "type": "tools",
-      "level": 4,
-      "description": ""
-    },
-    {
-      "name": "Mercurial",
-      "type": "tools",
-      "level": 3,
-      "description": ""
     }
   ]
 }
