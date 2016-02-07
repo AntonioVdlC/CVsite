@@ -67,8 +67,13 @@
 			overflow scroll
 			
 			&.closed
-				display none
+				height 0
+				font-size 0
 
 			&.open
-				display block
 				height calc(70vh - (1vh + 3.2em) * 5)
+				font-size 1em
+				
+			&.closed
+			&.open
+				transition all 0.5s ease-in-out
