@@ -3,8 +3,13 @@
 import scrollTo from "./../utils/scrollTo.js";
 
 export default {
-	events: events
+	init: init
 };
+
+function init () {
+	// Add event handlers
+	events();
+}
 
 // View events
 function events () {

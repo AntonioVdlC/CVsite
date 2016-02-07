@@ -1,11 +1,10 @@
 // -- About Page -- \\
 
 export default {
-	events: events
+	init: init
 };
 
-// View events
-function events () {
+function init () {
 	// Close all the details
 	closeContentDetails(document);
 
@@ -17,6 +16,12 @@ function events () {
 			openContentDetails(section);
 		});
 
+	// Add event handlers
+	events();
+}
+
+// View events
+function events () {
 	// Open section on click
 	Array
 		.from(document.querySelectorAll(".about-container li"))

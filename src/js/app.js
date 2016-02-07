@@ -5,7 +5,7 @@ import globalView from "./views/global.js";
 import infoView from "./views/info.js";
 import aboutView from "./views/about.js";
 
-// Attaching the events
-globalView.events();
-infoView.events();
-aboutView.events();
+// Initialize the views
+globalView.init();
+infoView.init();
+aboutView.init();
