@@ -1,0 +1,58 @@
+doctype html
+html(lang="en")
+	head
+		meta(charset="utf-8")
+
+		title Antonio Villagra De La Cruz
+	
+		link(href="#{locals['dist/app.css'].substr(5)}" rel="stylesheet")
+		script(src="#{locals['dist/app.js'].substr(5)}" defer)
+
+	body
+		// Info Page
+		div.page#info
+			img.profile-picture(src="img/#{locals.picture}" alt="Profile Picture")
+
+			h1.profile-name #{locals.name}
+			h2.profile-title #{locals.title}
+
+			ul.profile-links
+				each link in locals.links
+					li
+						a(href="#{link.url}" target="_blank")
+							img(src="img/logo/#{link.img}" alt="#{link.alt}")
+			
+			p.about-link
+				a(href="#about") About
+
+		// About Page
+		div.page#about
+
+			p.about-summary #{locals.summary}
+
+			ul.about-container#about-education
+				each education in locals.education
+					li(id="about-education-#{education.id}")
+						p.about-container-title 
+							img(src="img/education/#{education.img}")
+							span #{education.school}
+						p.about-container-subtitle #{education.degree}
+						p.about-container-content #{education.description}
+
+			ul.about-container#about-experience
+				each experience in locals.experience
+					li(id="about-experience-#{experience.id}")
+						p.about-container-title 
+							img(src="img/experience/#{experience.img}")
+							span #{experience.position}
+						p.about-container-subtitle #{experience.company}
+						p.about-container-content #{experience.description}
+
+			ul.about-container#about-interests
+				each interest in locals.interests
+					li(id="about-interests-#{interest.id}")
+						p.about-container-title 
+							img(src="img/interests/#{interest.img}")
+							span #{interest.name}
+						p.about-container-subtitle #{interest.subtitle}
+						p.about-container-content #{interest.description}

@@ -1,0 +1,79 @@
+// About Summary
+.about-summary
+	background-color white
+	border 2px solid darkgrey
+	display inline-block
+	font-size 1.4em
+	margin 5vh 0
+	padding 2vh 2vw
+	box-shadow 5px 5px 30px 0 rgba(0,0,0,1)
+	width 70vw
+
+// About Container
+.about-container
+	width 30vw
+	height 70vh
+	overflow scroll
+	padding 0
+	list-style none
+	float left
+	background-color white
+	box-shadow 5px 5px 30px 0 rgba(0,0,0,1)
+	
+	&:nth-of-type(1)
+		margin-left 1vw
+		margin-right 4vw
+	
+	&:nth-of-type(3)
+		margin-left 4vw
+		margin-right 1vw
+		
+	li
+		text-align justify
+		border-top 1px solid darkgrey
+		
+		&:nth-of-type(1)
+			border-top none
+		
+		.about-container-title
+		.about-container-subtitle
+			margin 0
+			padding 0.5vh
+			background lightgrey
+			cursor pointer
+			
+		.about-container-title
+			font-size 1.2em
+			padding-bottom 0
+			box-shadow 1px -1px 5px 1px grey
+			
+			img
+				height 20px
+				width 20px
+			
+			span
+				padding-left 10px
+			
+		.about-container-subtitle
+			border-bottom 1px solid black
+			box-shadow 1px 1px 1px 0px darkgrey
+			padding-left 35px
+			padding-top 0
+
+		.about-container-content
+			padding-left 35px
+			padding-right 15px
+			min-height 1em
+			overflow scroll
+			
+			&.closed
+				height 0
+				font-size 0
+
+			&.open
+				height calc(70vh - (1vh + 3.2em) * 5)
+				font-size 1em
+				
+			&.closed
+			&.open
+				transition all 0.5s ease-in-out
