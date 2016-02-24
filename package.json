@@ -9,16 +9,16 @@
     "prebuild": "npm run clean",
 
     "build": "npm run build:css && npm run build:js && npm run build:html && npm run build:img",
-    "build:css": "rimraf dist/*.css && stylus src/css/app.styl --out dist/ --compress && hashmark -s -l 8 dist/app.css -m data.json 'dist/{name}.{hash}{ext}' && rimraf dist/app.css && npm run build:html",
-    "build:js": "rimraf dist/*.js && rollup src/js/app.js -o dist/app.js && babel dist/app.js | uglifyjs | hashmark -s -l 8 -n dist/app.js -m data.json 'dist/{name}.{hash}{ext}' && rimraf dist/app.js && npm run build:html",
+    "build:css": "rimraf dist/*.css && stylus src/css/app.styl --out dist/ --compress && hashmark -s -l 8 dist/app.css -m data.json 'dist/{name}.{hash}{ext}' && rimraf dist/app.css",
+    "build:js": "rimraf dist/*.js && rollup src/js/app.js -o dist/app.js && babel dist/app.js | uglifyjs | hashmark -s -l 8 -n dist/app.js -m data.json 'dist/{name}.{hash}{ext}' && rimraf dist/app.js",
     "build:html": "jade src/index.jade --out dist --obj data.json",
     "build:img": "cp -r src/img/ dist/img/",
     
     "test": "echo \"Error: no test specified\" && exit 1",
     
     "watch": "parallelshell \"npm run watch:css\" \"npm run watch:js\" \"npm run watch:html\"",
-    "watch:css": "onchange 'src/css/**/*' -- npm run build:css",
-    "watch:js": "onchange 'src/js/**/*' -- npm run build:js",
+    "watch:css": "onchange 'src/css/**/*' -- npm run build:css && npm run build:html",
+    "watch:js": "onchange 'src/js/**/*' -- npm run build:js && npm run build:html",
     "watch:html": "onchange 'src/index.jade' 'data.json' -- npm run build:html",
     
     "open:dev": "opener http://localhost:9090",
