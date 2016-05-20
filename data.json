@@ -1,15 +1,10 @@
 {
-  "dist/app.js": "dist/app.d4acc1ea.js",
+  "dist/app.js": "dist/app.01ba4719.js",
   "dist/app.css": "dist/app.73fb6037.css",
   "name": "Antonio Villagra De La Cruz",
   "title": "Junior Software Engineer",
   "picture": "avdlc.jpg",
   "links": [
-    {
-      "alt": "LinkedIn",
-      "img": "linkedin.png",
-      "url": "https://www.linkedin.com/in/antoniovdlc"
-    },
     {
       "alt": "GitHub",
       "img": "github.png",
